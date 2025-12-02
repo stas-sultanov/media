@@ -101,14 +101,14 @@ The SA does this through an ongoing process that looks like this:
 
 - **Capture Business intent**: understand revenue impact, contractual promises, deadlines, constraints, and success criteria.
 - **Anchor it in the Domain**: map real workflows, compliance, obligations, and rules that cannot be broken.
-- **Check it against Software reality**: confirm that it can be built with the current stack, safely, on time, and make visible the debt or risk created.
-- **Validate it against Infrastructure reality**: ensure that it can run at scale, securely, cost‑effectively, and with the uptime and cost profile the company is willing to own.
+- **Check it against Software capabilities**: confirm that it can be built with the current stack, safely, on time, and make visible the debt or risk created.
+- **Validate it against Infrastructure realtiy**: ensure that it can run at scale, securely, cost‑effectively, and with the uptime and cost profile the company is willing to own.
 - **Negotiate and document the solution shape**: define how the solution must look so it is truly buildable and operable, with explicit trade‑offs instead of silent debt.
 - **Stay through implementation**: ensure what gets delivered still matches that agreed shape and has not been quietly degraded into something unstable, unmaintainable, or unprofitable.
 
 This process cannot be reliably split across multiple roles. When it is fragmented, every group protects its own priority, and nobody owns the balance.
 
-Only when a single role owns this process end to end, the balance holds and the product remains viable.
+Only when a single role owns this process end to end does the balance hold and the product remain viable.
 
 That single accountable role is the **Solutions Architect**.
 
@@ -155,50 +155,48 @@ Note that SAs, by nature, don’t stay long at a single company. The judgment th
 
 ## Why isn’t there an alternative?
 
-When companies understand what the Solutions Architect actually does, they assume that they can easily cover the capability with workaround.
+When companies understand what the Solutions Architect actually does, they assume that they can easily cover the capability with a workaround.
 
 What happens in practice is always some variation of the same assumption which is failure by nature:
 
 ### 1. Give it to the CTO
 
-Assumption: Chief Technology Officer (CTO) is technical and can do the SA job.
+Assumption: the Chief Technology Officer (CTO) is technical and can do the SA job.
 
-CTOs typically come up through management and don’t carry the hands‑on expertise a Solutions Architect requires. The modern CTO is a management role: budget, hiring, partners, certifications, board work, and sales. All of that is necessary — and it’s a different kind of expertise. Even if a company is lucky enough to have a CTO who meets the SA bar, they won’t have the time to do SA work week in, week out.
+Modern CTOs are primarily executive managers — budget, hiring, partners, certifications, board work, and sales. That expertise is necessary, but different. Even if a CTO meets the SA bar, they rarely have the time to do SA work week in, week out.
 
-A strong SA can work as CTO; the reverse is rare.
+An SA can shift into CTO; the reverse is rare.
 
 ### 2. Cover with multiple people
 
-Assumption: “This can be handled by senior people working together.”
+Assumption: “Senior people together can cover it.”
 
-Companies to put Engineering, Operations, Delivery, Compliance to work together and aim for consensus and expect the group to collectively "own" decisions.
+Companies put Engineers, Operations, Product Managers and Compliance Officers in a room and aim for consensus, expecting the group to collectively “own” decisions.
 
-On paper, this seems to cover all four areas — Business, Domain, Software, and Infrastructure.
-In reality, it fails because no single person is accountable for the full shape of the solution. Each participant protects their own priority, and there is still no owner of the balance in real time.
+On paper, this seems to cover Business, Domain, Software, and Infrastructure. In reality, it fails because no single person is accountable for the integrated balance. Each participant protects their own priority, consensus dilutes responsibility, and there is still no owner of the balance in real time.
 
-The shared responsibility becomes no ones responsibility.
+Shared responsibility becomes no one’s responsibility.
 
-The real solution must be born in one head that spans all four areas — the head of the SA.
+### 3. Level up an internal employee
 
-### 3. Level-up employee
+Assumption: mentor a strong internal engineer or delivery lead into an SA over time.
 
-Assumption: identify a strong internal engineer or delivery lead and mentor them into a Solutions Architect over time.
-
-This rarely succeeds, because correct judgment in this role comes from years of seeing different kinds of pressure and different kinds of failure:
+This rarely succeeds. Correct judgment in this role comes from years of exposure to different pressures and failures:
 - multiple customers,
 - multiple business models,
 - multiple domains with different regulatory traps,
 - multiple technology stacks and scaling problems,
 - multiple production outages and cost crises.
 
-A single SaaS company usually cannot generate that breadth.
-It isn’t about intelligence; it’s about accumulated scar tissue under different conditions.
+A single SaaS company usually cannot generate that breadth fast enough. It isn’t about intelligence; it’s accumulated scar tissue under different conditions.
 
 ### 4. Borrow from a vendor
 
-Assumption: take the architect that comes with an implementation partner or service provider.
+Assumption: use the architect provided by an implementation partner or service provider.
 
-In this case, the architect’s primary loyalty is to the vendor’s commercial safety and delivery success, not necessarily to the long-term cost structure, maintainability, and roadmap viability of the SaaS company’s product. Sometimes those interests align. Sometimes they do not. There is no guarantee.
+In this case, the architect’s primary loyalty is to the vendor’s commercial safety and delivery success, not necessarily to the long‑term cost structure, maintainability, and roadmap viability of the SaaS company.
+
+Sometimes interests align; sometimes they do not. There is no guarantee.
 
 ---
 
