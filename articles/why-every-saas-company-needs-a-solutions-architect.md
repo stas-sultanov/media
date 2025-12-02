@@ -18,7 +18,8 @@ Under business pressure or through lack of experience, teams pick the quickest p
 
 In the moment, choices look reasonable: unblock a deal, hit a date, calm an incident. Each one quietly adds long‑term risk that surfaces later. The consequences arrive as outages, rising run costs, and slower change — long after the original decision is forgotten.
 
-From the outside, the fix seems obvious: “Just start making optimal decisions.” In reality, it isn’t that simple.
+From the outside, the fix seems obvious: “Just start making optimal decisions”.
+In reality, it isn’t that simple.
 
 ---
 
@@ -82,7 +83,7 @@ In practical terms, an effective SA does the following:
 
 - Confirms that what is being promised to a customer can in fact be delivered without destroying future roadmap or operational stability.
 - States clearly when a shortcut creates a future liability (technical, contractual, compliance, or cost).
-- Describes the viable path: “Yes, this is possible — here is how it must be done so it won’t explode six months from now.”
+- Describes the viable path: “Yes, this is possible — here is how it must be done so it won’t explode six months from now”.
 - Forces explicit trade‑offs and documented decisions instead of silent debt.
 
 The SA keeps Demand and Capability in balance.
@@ -93,9 +94,7 @@ The SA provides margin protection, reputational protection, and delivery‑risk 
 
 ## How does the SA do this in practice?
 
-Keeping a SaaS product healthy requires a Solutions Architect who continuously turns Business intent into real, bankable value that integrates with what already exists and runs reliably in production — with no surprise costs, outages, or roadmap slips.
-
-This is not abstract.
+To keep a SaaS product running, a solution architect must continually translate business intent into real, tangible value that integrates with what already exists and reliably operates in production—without unexpected costs, disruptions, or deviations from the roadmap.
 
 The SA does this through an ongoing process that looks like this:
 
@@ -129,7 +128,7 @@ Direct exposure to commercial pressure. Ideally has acted as a co‑founder, car
 Several years inside the actual business domain (energy, finance, logistics, healthcare, etc.). Understands compliance traps and which “minor requirements” are in fact legally or operationally non‑negotiable.
 
 - **Software**
-Over a decade or even two of building, debugging, and operating production systems in the same languages and frameworks that the IT solution uses. Not “familiar with,” but battle-tested. Has carried on-call responsibility for that stack.
+Over a decade or even two of building, debugging, and operating production systems in the same languages and frameworks that the IT solution uses. Not “familiar with”, but battle-tested. Has carried on-call responsibility for that stack.
 
 - **Infrastructure**
 A decade of running workloads on the actual platform in use (specific cloud environment, network model, security posture). Understands scaling limits, cost levers, and real failure modes under load.
@@ -137,7 +136,7 @@ A decade of running workloads on the actual platform in use (specific cloud envi
 - **Motivation**
 The SA must care that the solution actually fits the business and survives in production — and must be rewarded like someone protecting revenue, margin, and reputation.
 
-This is not a role that can be filled by “a smart engineer with potential in six months.”
+This is not a role that can be filled by “a smart engineer with potential in six months”.
 
 This profile is rare.
 
@@ -169,9 +168,9 @@ An SA can shift into CTO; the reverse is rare.
 
 ### 2. Cover with multiple people
 
-Assumption: “Senior people together can cover it.”
+Assumption: “Senior people together can cover it”.
 
-Companies put Engineers, Operations, Product Managers and Compliance Officers in a room and aim for consensus, expecting the group to collectively “own” decisions.
+Companies put Engineers, Operations, Product Management, and Compliance in one room, aim for consensus, and expect the group to collectively “own” decisions.
 
 On paper, this seems to cover Business, Domain, Software, and Infrastructure. In reality, it fails because no single person is accountable for the integrated balance. Each participant protects their own priority, consensus dilutes responsibility, and there is still no owner of the balance in real time.
 
@@ -192,11 +191,11 @@ A single SaaS company usually cannot generate that breadth fast enough. It isn�
 
 ### 4. Borrow from a vendor
 
-Assumption: use the architect provided by an implementation partner or service provider.
+Assumption: use an architect provided by an implementation partner or service provider.
 
-In this case, the architect’s primary loyalty is to the vendor’s commercial safety and delivery success, not necessarily to the long‑term cost structure, maintainability, and roadmap viability of the SaaS company.
+A vendor architect’s primary loyalty is to their employer’s commercial safety and delivery success — not to SaaS company.
 
-Sometimes interests align; sometimes they do not. There is no guarantee.
+Even if the SA genuinely wants to help, they will always be forced to propose solutions that work for their employer first.
 
 ---
 
