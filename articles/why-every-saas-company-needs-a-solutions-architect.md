@@ -155,7 +155,7 @@ Note that SAs, by nature, don’t stay long at a single company. The judgment th
 
 ## Why isn’t there an alternative?
 
-When companies understand what the Solutions Architect actually does, assume they can easily cover the capability. What happens in practice is always some variation of the same failed workarounds:
+When companies understand what the Solutions Architect actually does, they assume that they can easily cover the capability with workaround. What happens in practice is always some variation of the same failure:
 
 ### 1. Give it to the CTO
 
@@ -163,47 +163,40 @@ Assumption: Chief Technology Officer (CTO) is technical and can do the SA job.
 
 CTOs typically come up through management and don’t carry the hands‑on expertise a Solutions Architect requires. The modern CTO is a management role: budget, hiring, partners, certifications, board work, and sales. All of that is necessary — and it’s a different kind of expertise. Even if a company is lucky enough to have a CTO who meets the SA bar, they won’t have the time to do SA work week in, week out.
 
-A strong SA can grow into CTO; the reverse is rare.
+A strong SA can work as CTO; the reverse is rare.
 
 ### 2. Cover with multiple people
 
-Common internal assumption across SaaS companies: “This can be handled by senior people working together.”
+Assumption: “This can be handled by senior people working together.”
 
-Pattern: Pair a senior developer, an operations lead, a delivery/engagement lead, and someone from compliance or finance, and expect the group to collectively "own" decisions.
-
-Because of this fragmentation, companies often attempt “alignment meetings”: put Engineering, Operations, Delivery, Compliance, and Finance in one room and aim for consensus.
+Companies to put Engineering, Operations, Delivery, Compliance to work together and aim for consensus and expect the group to collectively "own" decisions.
 
 On paper, this seems to cover all four areas — Business, Domain, Software, and Infrastructure.
 In reality, it fails because no single person is accountable for the full shape of the solution. Each participant protects their own priority, and there is still no owner of the balance in real time.
+
+The shared responsibility becomes no ones responsibility.
 
 The real solution must be born in one head that spans all four areas — the head of the SA.
 
 ### 3. Level-up employee
 
-The theory: identify a strong internal engineer or delivery lead and mentor them into a Solutions Architect over time.
+Assumption: identify a strong internal engineer or delivery lead and mentor them into a Solutions Architect over time.
 
 This rarely succeeds, because correct judgment in this role comes from years of seeing different kinds of pressure and different kinds of failure:
-
 - multiple customers,
 - multiple business models,
 - multiple domains with different regulatory traps,
 - multiple technology stacks and scaling problems,
 - multiple production outages and cost crises.
 
-A single SaaS company usually cannot generate that breadth fast enough for one person. It isn’t about intelligence; it’s about accumulated scar tissue under different conditions.
-
-A SaaS company can cultivate this over years by rotating one person through multiple high‑impact problems, but it cannot manufacture a senior Solutions Architect “on demand” just because the need appeared this quarter.
+A single SaaS company usually cannot generate that breadth.
+It isn’t about intelligence; it’s about accumulated scar tissue under different conditions.
 
 ### 4. Borrow from a vendor
 
-This looks efficient: take the architect that comes with an implementation partner or service provider.
+Assumption: take the architect that comes with an implementation partner or service provider.
 
-The risk is incentive alignment. In that model, the architect’s primary loyalty is to the vendor’s commercial safety and delivery success, not necessarily to the long-term cost structure, maintainability, and roadmap viability of the SaaS company’s product. Sometimes those interests align. Sometimes they do not. There is no guarantee.
-
-A SaaS company does not only need engineers who can build.
-It needs one role whose job is to prevent the company from selling something it cannot safely deliver — and from building something it cannot afford to run.
-
-That role is the Solutions Architect.
+In this case, the architect’s primary loyalty is to the vendor’s commercial safety and delivery success, not necessarily to the long-term cost structure, maintainability, and roadmap viability of the SaaS company’s product. Sometimes those interests align. Sometimes they do not. There is no guarantee.
 
 ---
 
