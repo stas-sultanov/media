@@ -155,7 +155,9 @@ Note that SAs, by nature, don’t stay long at a single company. The judgment th
 
 ## Why isn’t there an alternative?
 
-When companies understand what the Solutions Architect actually does, they assume that they can easily cover the capability with workaround. What happens in practice is always some variation of the same failure:
+When companies understand what the Solutions Architect actually does, they assume that they can easily cover the capability with workaround.
+
+What happens in practice is always some variation of the same assumption which is failure by nature:
 
 ### 1. Give it to the CTO
 
