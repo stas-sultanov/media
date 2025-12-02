@@ -6,15 +6,13 @@ That struggle shows up in familiar ways:
 - runaway infrastructure bills that eat margin
 - slow evolution that delays getting new functionality to market
 
-This isn’t bad luck.
-
-It’s a structural issue that won’t fix itself.
+This isn’t bad luck. It’s a structural issue that won’t fix itself.
 
 ---
 
-## What is the root cause?
+## What is the root cause of the issue?
 
-The root cause is a stream of suboptimal, often simply bad, decisions made across the lifecycle of the IT solution.
+The root cause is a stream of suboptimal, often simply bad, decisions made through the lifecycle of the IT solution.
 
 Under business pressure or through lack of experience, teams pick the quickest path. It buys a short‑term win and hides a long‑term cost.
 People act tactically. No one holds the strategic line.
@@ -40,7 +38,7 @@ What must be respected by the product — processes, rules, compliance obligatio
 What can be built, tested, and maintained by the current teams and tech stack.
 
 4. **Infrastructure**
-What can host and operate the software at scale — with the required capacity, resilience, security, performance, and predictable run cost.
+What can support solution and host the software at scale — with the required capacity, resilience, security, performance, and predictable run cost.
 
 These four forces naturally form two sides of a single scale:
 
@@ -50,9 +48,7 @@ Demand is what the business wants and what must be respected.
 - **Capability = Software + Infrastructure**
 Capability is what the engineers can actually build and run.
 
-Every decision within a SaaS product’s lifecycle must keep Demand and Capability in balance.
-
-That’s why truly optimal decisions are inherently hard.
+Every decision within a SaaS product’s lifecycle must keep Demand and Capability in balance. That’s inherently hard — and in most SaaS companies, no one is explicitly accountable for that balance.
 
 ---
 
@@ -120,31 +116,6 @@ That single accountable role is the **Solutions Architect**.
 
 ---
 
-## Why can’t other roles do this?
-
-Common internal assumption across SaaS companies: “This can be handled by senior people working together.”
-
-In practice, this does not work.
-
-- **Senior developers** are deep in Software and typically are not deeply embedded in Business contract exposure and Infrastructure.
-
-- **Operations / infrastructure leads** are deep in Infrastructure and reliability, but are not negotiating Business promises and Domain rules at deal time. Their mandate is to prevent outages, not to shape commercial commitments.
-
-- **Product and delivery management** understand “what must be delivered by when,” but do not own the long-term technical cost of those promises nor the operational blast radius.
-
-Because of this fragmentation, companies often attempt “alignment meetings”: put engineering, ops, delivery, compliance, and finance in one room and aim for consensus.
-
-On paper, this appears healthy.
-In reality, it fails for a simple reason: no single person in that room is personally accountable for the final integrated balance across Business, Domain, Software, and Infrastructure.
-
-What emerges from a committee is a negotiated compromise. Everyone protects their own priority, and the final result is watered down. No one fully owns the consequences.
-
-What is required instead is a single coherent solution that works commercially, respects the domain, can actually be built in software, and can actually run in infrastructure — and someone who will take responsibility for that full shape.
-
-That is the job of the Solutions Architect.
-
----
-
 ## What kind of person can play this role?
 
 A real Solutions Architect is rare.
@@ -174,26 +145,34 @@ This profile is rare.
 
 ---
 
-## How do you get this capability?
+## How can company get a Solutions Architect?
 
-The realistic way to secure this capability is to bring in a senior Solutions Architect from the market as a dedicated contractor for a defined period (for example, one to two years). The company brings in someone who has already seen these failure patterns in multiple environments, already paid the price for getting them wrong, and is now motivated to protect the business rather than protect a vendor.
+The realistic way is to bring in a senior Solutions Architect from the market as a dedicated contractor for a defined period (for example, one to three years). The company must bring in someone who has already seen these failure patterns in multiple environments, already paid the price for getting them wrong, and is now motivated to protect the business rather than protect a vendor.
 
-Give the SA clear authority to say “not like this” before commitments are locked and before solutions are deployed.
+SAs, by nature, don’t stay long at a single company. The judgment this role requires comes from switching products and environments — seeing different business models, domains, stacks, and failure modes. That breadth is hard to accumulate inside one product, so senior SAs tend to rotate to build and maintain the experience the role demands.
 
 ---
 
 ## Why do common alternatives fail?
 
-Most SaaS companies, once they understand what the Solutions Architect actually does, assume they can easily cover the need. What happens in practice is always some variation of the same three failed workarounds:
+When companies understand what the Solutions Architect actually does, assume they can easily cover the capability. What happens in practice is always some variation of the same failed workarounds:
 
-### 1. Splitting responsibilities across multiple senior people
+### 1. Can a CTO play the Solutions Architect role?
+
+CTOs typically come up through management and don’t carry the hands‑on expertise a Solutions Architect requires. The modern CTO is a management role: budget, hiring, partners, certifications, board work, and sales. All of that is necessary — and it’s a different kind of expertise. Even if a company is lucky enough to have a CTO who meets the SA bar, they won’t have the time to do SA work week in, week out.
+
+A strong SA can grow into CTO; the reverse is rare.
+
+### 2. Can multiple people replace the SA ?
 
 Pattern: pair a senior developer, an operations lead, a delivery/engagement lead, and maybe someone from compliance or finance, and expect the group to collectively "own" decisions.
 
 On paper, this seems to cover all four areas — Business, Domain, Software, and Infrastructure.
 In reality, it fails because no one person is accountable for the full shape of the solution. Each participant protects their own priority, and there is still no single owner of the total business/technical/operational balance in real time. This is a workaround, not a Solutions Architect.
 
-### 2. Trying to grow an internal candidate into the role
+The real solution can be born in one head that masters all the topic, the head of SA.
+
+### 3. Can company level-up internal employee
 
 The theory: identify a strong internal engineer or delivery lead and mentor them into a Solutions Architect over time.
 
@@ -209,7 +188,7 @@ A single SaaS company usually cannot generate that breadth fast enough for one p
 
 A SaaS company can cultivate this over years by rotating one person through multiple high-impact problems, but it cannot manufacture a senior Solutions Architect "on demand" just because the need appeared this quarter.
 
-### 3. Borrowing an “architect” from a vendor
+### 4. Can company borrow an SA from a vendor?
 
 This looks efficient: take the architect that comes with an implementation partner or service provider.
 
@@ -222,7 +201,32 @@ That role is the Solutions Architect.
 
 ---
 
-## What should you do now?
+## Why can’t other roles do this?
+
+Common internal assumption across SaaS companies: “This can be handled by senior people working together.”
+
+In practice, this does not work.
+
+- **Senior developers** are deep in Software and typically are not deeply embedded in Business contract exposure and Infrastructure.
+
+- **Operations / infrastructure leads** are deep in Infrastructure and reliability, but are not negotiating Business promises and Domain rules at deal time. Their mandate is to prevent outages, not to shape commercial commitments.
+
+- **Product and delivery management** understand “what must be delivered by when,” but do not own the long-term technical cost of those promises nor the operational blast radius.
+
+Because of this fragmentation, companies often attempt “alignment meetings”: put engineering, ops, delivery, compliance, and finance in one room and aim for consensus.
+
+On paper, this appears healthy.
+In reality, it fails for a simple reason: no single person in that room is personally accountable for the final integrated balance across Business, Domain, Software, and Infrastructure.
+
+What emerges from a committee is a negotiated compromise. Everyone protects their own priority, and the final result is watered down. No one fully owns the consequences.
+
+What is required instead is a single coherent solution that works commercially, respects the domain, can actually be built in software, and can actually run in infrastructure — and someone who will take responsibility for that full shape.
+
+That is the job of the Solutions Architect.
+
+---
+
+## Conclussion
 
 Any SaaS company that operates a live product needs a Solutions Architect.
 
