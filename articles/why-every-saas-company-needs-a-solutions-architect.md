@@ -21,7 +21,7 @@ People act tactically. No one holds the strategic line.
 
 In the moment, choices look reasonable: unblock a deal, hit a date, calm an incident. Each one quietly adds long‑term risk that will surface later. The consequences arrive as outages, rising run costs, and slower change — long after the original decision is forgotten.
 
-From the outside, the fix seems obvious: “Just start making optimal decisions”.
+From the outside, the fix seems obvious: “Just start making optimal decisions.” 
 In reality, it isn’t that simple.
 
 ---
@@ -88,8 +88,8 @@ In practical terms, an effective SA does the following:
 
 - Confirms that what is being promised to a customer can in fact be delivered without destroying future roadmap or operational stability.
 - States clearly when a shortcut creates a future liability (technical, contractual, compliance, or cost).
-- Describes the viable path: "Yes, this is possible — here is how it must be done so it will not explode six months from now."
-- Forces explicit trade-offs and documented decisions instead of silent debt.
+- Describes the viable path: “Yes, this is possible — here is how it must be done so it will not explode six months from now.”
+- Forces explicit trade‑offs and documented decisions instead of silent debt.
 
 The SA is the function that keeps Demand and Capability in balance.
 
@@ -178,7 +178,7 @@ This profile is rare.
 
 The realistic way to secure this capability is to bring in a senior Solutions Architect from the market as a dedicated contractor for a defined period (for example, one to two years). The company brings in someone who has already seen these failure patterns in multiple environments, already paid the price for getting them wrong, and is now motivated to protect the business rather than protect a vendor.
 
-Give the SA clear authority to say "not like this" before commitments are locked and before solutions are deployed.
+Give the SA clear authority to say “not like this” before commitments are locked and before solutions are deployed.
 
 ---
 
