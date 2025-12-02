@@ -101,14 +101,14 @@ The SA does this through an ongoing process that looks like this:
 
 - **Capture Business intent**: understand revenue impact, contractual promises, deadlines, constraints, and success criteria.
 - **Anchor it in the Domain**: map real workflows, compliance, obligations, and rules that cannot be broken.
-- **Test it against Software reality**: confirm that it can be built with the current stack, safely, on time, and make visible the debt or risk created.
-- **Test it against Infrastructure reality**: confirm that it can run at scale, securely, cost‑effectively, and with the uptime and cost profile the company is willing to own.
+- **Check it against Software reality**: confirm that it can be built with the current stack, safely, on time, and make visible the debt or risk created.
+- **Validate it against Infrastructure reality**: ensure that it can run at scale, securely, cost‑effectively, and with the uptime and cost profile the company is willing to own.
 - **Negotiate and document the solution shape**: define how the solution must look so it is truly buildable and operable, with explicit trade‑offs instead of silent debt.
 - **Stay through implementation**: ensure what gets delivered still matches that agreed shape and has not been quietly degraded into something unstable, unmaintainable, or unprofitable.
 
-This process cannot be reliably split across multiple roles. When it is fragmented, every group protects its own priority, and nobody owns the full Business, Domain, Software, and Infrastructure balance.
+This process cannot be reliably split across multiple roles. When it is fragmented, every group protects its own priority, and nobody owns the balance.
 
-When a single role owns this process end to end, the balance holds and the product remains viable.
+Only when a single role owns this process end to end, the balance holds and the product remains viable.
 
 That single accountable role is the **Solutions Architect**.
 
