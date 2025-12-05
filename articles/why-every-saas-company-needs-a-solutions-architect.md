@@ -160,11 +160,12 @@ What happens in practice is always some variation of the same assumption which i
 
 ### 1. Give it to the CTO
 
-Assumption: the Chief Technology Officer (CTO) is technical and can do the SA job.
+Assumption: the Chief Technology Officer is “the technical one,” so they can also do the SA job.
 
-Modern CTOs are primarily executive managers — budget, hiring, partners, certifications, board work, and sales. That expertise is necessary, but different. Even if a CTO meets the SA bar, they rarely have the time to do SA work week in, week out.
+The CTO role is crucial, but it’s an executive function: organization design, budget, hiring, vendor strategy, certifications, board work, and customer engagement. The expertise required for CTO is fundamentally different from that of an SA.
 
-An SA can shift into CTO; the reverse is rare.
+Even if a CTO personally meets the SA bar, they almost never have the time or focus to do deep SA work week in, week out.
+Using a CTO as a substitute for an SA usually means neither job is done properly.
 
 ### 2. Cover with multiple people
 
