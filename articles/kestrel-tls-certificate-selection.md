@@ -1,5 +1,5 @@
 ---
-title: Serving RSA and ECDSA Certificates from One ASP.NET Kestrel Endpoint
+title: Serving RSA and ECDSA from One ASP.NET Core Kestrel Endpoint
 published: false
 tags:
   - aspnet
@@ -14,18 +14,17 @@ In that world, TLS handling by the web server is usually straightforward: one se
 The situation is different when clients fall outside that mainstream.<br>
 In IoT, device fleets, industrial gateways, legacy SDKs, or application-to-application integrations, clients often have hard restrictions on which server authentication algorithms, certificate public key types, and certificate signature schemes they can use.
 
-One important subset of those cases is about signature algorithms the client supports.<br>
-Over time signature algorithms has evolved in this order RSA, DSA, ECDSA, RSA-PSS, Ed25519.
-Due to the nature not all clients may support all of them, some clients may support only RSA; another may support only ECDSA; a third may support both.
-This article focuses on exactly that situation.
+One important subset of those cases concerns the signature algorithms supported by the client.<br>
+Cryptographic algorithms evolved over time, and different generations of clients ended up with support for different sets of algorithms.
+As a result, one client may support only RSA, another may support only ECDSA, and a third may support both.<br>
 
-When it comes to implementation of web serevr that can serve all this clients
-That creates a specific requirement for the server: during the TLS handshake, it must inspect the client's capabilities and present a certificate with signature scheme that the client supports.
+When implementing a web server that must serve all those clients, this creates a specific requirement for the server.<br>
+During the TLS handshake, it must inspect the client's capabilities and present a certificate with a signature algorithm that the client supports.
 
 This article is about how to handle that requirement directly in ASP.NET Core Kestrel, without moving certificate management into a reverse proxy, external gateway, or other edge tier.
 
-> Note: ASP.NET implementation, and most of the information available on this topic, focus on SNI-based certificate selection, where different server names map to different certificates, which is not the case here.<br>
-Because of that, LLM-based AI assistants conclude that this scenario is impossible to implement in ASP.NET Core Kestrel.
+> Note: ASP.NET Core implementation, and most of the information available on this topic, focus on SNI-based certificate selection, where different server names map to different certificates, which is not the case here.<br>
+Because of that, most people and LLM-based AI assistants conclude that this scenario is impossible to implement in ASP.NET Core Kestrel.
 
 > Note: The reader should have a deep understanding of TLS, especially the negotiation phase of the handshake.
 
@@ -74,19 +73,20 @@ flowchart LR
 
 This case is not unique and occurs frequently in some areas.<br>
 It is often addressed by offloading TLS certificate management to a dedicated edge service placed in front of the web server.<br>
-More specifically, that edge service is often a reverse proxy such as NGINX or HAProxy, or a managed edge gateway such as Azure Application Gateway, or Kubernetes Gateway API.
+More specifically, that edge service is often a reverse proxy such as NGINX or HAProxy, a managed edge gateway such as Azure Application Gateway, or a Kubernetes Gateway implementation.
 
-While this approach certainly works, it also brings significant drawbacks, such as:
+While this approach certainly works, it also brings drawbacks, such as:
 - one more network hop,
 - one more system to provision,
-- one more availability domain,
+- one more failure domain,
 - one more place where TLS configuration can drift,
 - one more operational surface that costs money and must be managed.
 
 In mutual TLS scenarios, this is even less attractive.<br>
 Once certificate negotiation and identity extraction move to an edge service, authentication logic gets split across services.
 The edge service now owns part of the security model, while the application owns another part.
-Especially problematic in regulated or protocol-driven environments that require strict end-to-end client authentication and certificate binding at the application layer.<br>
+This is especially problematic in regulated or protocol-driven environments that require strict end-to-end client authentication and certificate binding at the application layer.<br>
+In zero-trust environments, it may also be unacceptable to leave traffic unencrypted between the edge service and the web server.
 
 ### Visualization
 
@@ -134,14 +134,14 @@ flowchart LR
 
 ## The Optimal Approach
 
-For this specific case, the cleanest design is to keep certificate selection inside the application host.
+For the specific case discussed in this article, the optimal design is to keep certificate selection inside the application host.
 
 That produces a much cleaner model:
 
 - There is no extra hop and no extra failure point.
 - TLS management stays with the host that actually owns the endpoint.
 - Certificate selection is implemented exactly where the handshake happens.
-- Mutual TLS (mTLS)-related logic can stay in one place.
+- In mutual TLS (mTLS) scenarios, client certificate negotiation and application-side identity handling are in one place.
 
 ### Visualization
 
@@ -184,7 +184,7 @@ flowchart LR
 	linkStyle default stroke:#64748B,stroke-width:1.5px
 ```
 
-## How Server-side Certificate Selection Works
+## How Certificate Selection Works During TLS
 
 Before moving forward, it is important to clarify how server-side certificate selection works.
 
@@ -209,7 +209,7 @@ The exact location of the information needed for certificate selection depends o
 | 1.2     | `signature_algorithms` extension | `cipher_suites` field
 | 1.3     | `signature_algorithms_cert` extension | `signature_algorithms` extension
 
-### How to choose which certificate to present
+### How the Server Chooses a Certificate
 
 The actual certificate to present is chosen by considering both the client’s capabilities and the web server’s certificate selection policy.
 
@@ -222,7 +222,7 @@ Typical strategies include:
 
 This is the core mechanism for dynamic certificate selection based on client capabilities.
 
-## Implement using ASP.NET Core and Kestrel
+## Implement using ASP.NET Core Kestrel
 
 Since ASP.NET Core 2.1, Kestrel provides the ability to configure TLS handshake behavior via [`HttpsConnectionAdapterOptions`][ms_learn_HttpsConnectionAdapterOption].
 
@@ -242,92 +242,27 @@ This callback enables inspection of the incoming `ClientHello` before the certif
 
 These APIs provide all the necessary hooks to implement dynamic certificate selection in Kestrel based on client capabilities, not just SNI.
 
-## Demo
+## Reference Implementation
 
-The implementation pattern is straightforward:
+Everything required to implement the optimal approach described in this article has already been implemented by me in the following GitHub repository:
 
-1. Register `TlsClientHelloBytesCallback`.
-2. Parse the TLS record into a compact internal representation such as `RSA`, `ECDSA`, or both.
-3. Store the parsed value in `ConnectionContext.Items`.
-4. Register `ServerCertificateSelector`.
-5. Read the parsed value and return the matching certificate.
+- [tls-server-certificate-selection][demo-repo]
 
-In the demo, the HTTPS setup looks like this:
+This is not a toy demo.<br>
+The repository contains production-grade code for parsing `ClientHello` and extracting the data required for certificate selection.
 
-```csharp
-void ConfigureHttpsOptions(HttpsConnectionAdapterOptions httpsOptions)
-{
-    httpsOptions.TlsClientHelloBytesCallback = OnTlsClientHelloBytes;
-    httpsOptions.ServerCertificateSelector = SelectCertificate;
-}
-```
+It also contains tests that can be used to study the behavior in detail, including integration tests that show how to wire the mechanism into ASP.NET Core Kestrel.
 
-The callback parses the raw handshake message and stores the result on the connection:
+More specifically, the repository provides:
 
-```csharp
-private static void OnTlsClientHelloBytes(ConnectionContext connectionContext, ReadOnlySequence<byte> data)
-{
-    var parseResult = TlsClientHelloParser.TryParse(data, out var signatureAlgorithms);
+- low-level parsing of `ClientHello`,
+- extraction of the TLS data relevant to certificate selection,
+- a reusable implementation that can be inspected independently from the article,
+- Kestrel-based integration tests that demonstrate end-to-end certificate selection behavior.
 
-    if (parseResult == TlsClientHelloParseErrorCode.None)
-    {
-        connectionContext.Items["SignatureAlgorithms"] = signatureAlgorithms;
-    }
-}
-```
+The repository shows the implementation in full, with tests that make the behavior easy to verify and explore.
 
-The selector then chooses the certificate:
-
-```csharp
-private X509Certificate2? SelectCertificate(ConnectionContext? context, string? _)
-{
-    if (context is null)
-    {
-        return null;
-    }
-
-    if (!context.Items.TryGetValue("SignatureAlgorithms", out var value))
-    {
-        return null;
-    }
-
-    if (value is not TlsSignatureAlgorithms signatureAlgorithms)
-    {
-        return null;
-    }
-
-    if (signatureAlgorithms.HasFlag(TlsSignatureAlgorithms.ECDSA))
-    {
-        return certificateECDsa;
-    }
-
-    if (signatureAlgorithms.HasFlag(TlsSignatureAlgorithms.RSA))
-    {
-        return certificateRSA;
-    }
-
-    return null;
-}
-```
-
-This is enough to support a single endpoint that can present either certificate depending on client capabilities.
-
-The full demo, including the parser and integration tests, is available here:
-
-- [GitHub repository][demo-repo]
-
-The repository demonstrates:
-
-- parsing raw `ClientHello` bytes,
-- selecting RSA vs ECDSA certificates in Kestrel,
-- validating behavior with integration tests,
-- handling both TLS 1.2 and TLS 1.3 negotiation paths.
-
-If you need this capability in a real system, the interesting part is not the amount of code, but that the mechanism is much closer to the server than many teams assume.
-
-Kestrel is already in the handshake path. With the right callback, certificate selection is just another transport decision.
-
-## Final Point
+## Conclusion
 
 If you have one logical endpoint and heterogeneous non-browser clients, deploying an extra TLS tier should not be your default response.
 
@@ -337,7 +272,7 @@ When the requirement is simply:
 - same application,
 - different certificate algorithms per client capability,
 
-ASP.NET Core can solve it where the problem actually lives: inside the server during TLS negotiation.
+Kestrel can solve it where the problem actually lives: inside the server during TLS negotiation.
 
 ---
 
@@ -345,7 +280,7 @@ If you found this article useful, feel free to buy the author [a cup of coffee](
 
 ----
 
-[demo-repo]: https://github.com/stas-sultanov/asp-net-multicert
+[demo-repo]: https://github.com/stas-sultanov/tls-server-certificate-selection
 [rfc_8446]: https://www.rfc-editor.org/rfc/rfc8446
 [rfc_8446_handshake]: https://www.rfc-editor.org/rfc/rfc8446#section-4
 [rfc_8446_clienthello]: https://www.rfc-editor.org/rfc/rfc8446#section-4.1.2
