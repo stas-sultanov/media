@@ -33,6 +33,8 @@ Because of that, most people and LLM-based AI assistants conclude that this scen
 The visualization below illustrates the exact case addressed in this article.<br>
 The backend exposes one endpoint and clients have different capabilities.
 
+[Open in mermaid.live][mermaid-dia-intro]
+
 ```mermaid
 flowchart LR
 %% nodes
@@ -61,11 +63,11 @@ flowchart LR
 	client_type_a:::Client
 	client_type_b:::Client
 	client_type_c:::Client
-	classDef Client stroke-width:1.5px,stroke-dasharray:none,stroke:#475569,fill:#334155,color:#F8FAFC
-	classDef Tls stroke-width:1.5px,stroke-dasharray:none,stroke:#0F766E,fill:#115E59,color:#F0FDFA
-	classDef Application stroke-width:1.5px,stroke-dasharray:none,stroke:#B45309,fill:#92400E,color:#FFFBEB
-	classDef Endpoint stroke-width:1.5px,stroke-dasharray:none,stroke:#000000,fill:#FFFFFF
-	style backend fill:transparent,stroke:#94A3B8,stroke-width:1px,stroke-dasharray:6 4
+	classDef Client stroke-width:1.5px,stroke-dasharray:none,stroke:#475569,fill:#E2E8F0,color:#0F172A
+	classDef Tls stroke-width:1.5px,stroke-dasharray:none,stroke:#0F766E,fill:#CCFBF1,color:#134E4A
+	classDef Application stroke-width:1.5px,stroke-dasharray:none,stroke:#B45309,fill:#FEF3C7,color:#78350F
+	classDef Endpoint stroke-width:1.5px,stroke-dasharray:none,stroke:#334155,fill:#F8FAFC,color:#0F172A
+	style backend fill:transparent,stroke:#94A3B8,stroke-width:1px,stroke-dasharray:6 4,color:#475569
 	linkStyle default stroke:#64748B,stroke-width:1.5px
 ```
 
@@ -89,6 +91,8 @@ This is especially problematic in regulated or protocol-driven environments that
 In zero-trust environments, it may also be unacceptable to leave traffic unencrypted between the edge service and the web server.
 
 ### Visualization
+
+[Open in mermaid.live][mermaid-dia-common-approach]
 
 ```mermaid
 flowchart LR
@@ -122,13 +126,13 @@ flowchart LR
 	client_type_a:::Client
 	client_type_b:::Client
 	client_type_c:::Client
-	classDef Client stroke-width:1.5px,stroke-dasharray:none,stroke:#475569,fill:#334155,color:#F8FAFC
-	classDef Tls stroke-width:1.5px,stroke-dasharray:none,stroke:#0F766E,fill:#115E59,color:#F0FDFA
-	classDef Application stroke-width:1.5px,stroke-dasharray:none,stroke:#B45309,fill:#92400E,color:#FFFBEB
-	classDef Endpoint stroke-width:1.5px,stroke-dasharray:none,stroke:#000000,fill:#FFFFFF
-	style backend fill:transparent,stroke:#94A3B8,stroke-width:1px,stroke-dasharray:6 4
-	style edge fill:transparent,stroke:#F59E0B,stroke-width:1px,stroke-dasharray:4 3
-	style applicationHost fill:transparent,stroke:#60A5FA,stroke-width:1px,stroke-dasharray:4 3
+	classDef Client stroke-width:1.5px,stroke-dasharray:none,stroke:#475569,fill:#E2E8F0,color:#0F172A
+	classDef Tls stroke-width:1.5px,stroke-dasharray:none,stroke:#0F766E,fill:#CCFBF1,color:#134E4A
+	classDef Application stroke-width:1.5px,stroke-dasharray:none,stroke:#B45309,fill:#FEF3C7,color:#78350F
+	classDef Endpoint stroke-width:1.5px,stroke-dasharray:none,stroke:#334155,fill:#F8FAFC,color:#0F172A
+	style backend fill:transparent,stroke:#94A3B8,stroke-width:1px,stroke-dasharray:6 4,color:#475569
+	style edge fill:transparent,stroke:#D97706,stroke-width:1px,stroke-dasharray:4 3,color:#92400E
+	style applicationHost fill:transparent,stroke:#2563EB,stroke-width:1px,stroke-dasharray:4 3,color:#1E3A8A
 	linkStyle default stroke:#64748B,stroke-width:1.5px
 ```
 
@@ -144,6 +148,8 @@ That produces a much cleaner model:
 - In mutual TLS (mTLS) scenarios, client certificate negotiation and application-side identity handling are in one place.
 
 ### Visualization
+
+[Open in mermaid.live][mermaid-dia-optimal-approach]
 
 ```mermaid
 flowchart LR
@@ -175,14 +181,26 @@ flowchart LR
 	client_type_a:::Client
 	client_type_b:::Client
 	client_type_c:::Client
-	classDef Client stroke-width:1.5px,stroke-dasharray:none,stroke:#475569,fill:#334155,color:#F8FAFC
-	classDef Tls stroke-width:1.5px,stroke-dasharray:none,stroke:#0F766E,fill:#115E59,color:#F0FDFA
-	classDef Application stroke-width:1.5px,stroke-dasharray:none,stroke:#B45309,fill:#92400E,color:#FFFBEB
-	classDef Endpoint stroke-width:1.5px,stroke-dasharray:none,stroke:#000000,fill:#FFFFFF
-	style backend fill:transparent,stroke:#94A3B8,stroke-width:1px,stroke-dasharray:6 4
-	style applicationHost fill:transparent,stroke:#60A5FA,stroke-width:1px,stroke-dasharray:4 3
+	classDef Client stroke-width:1.5px,stroke-dasharray:none,stroke:#475569,fill:#E2E8F0,color:#0F172A
+	classDef Tls stroke-width:1.5px,stroke-dasharray:none,stroke:#0F766E,fill:#CCFBF1,color:#134E4A
+	classDef Application stroke-width:1.5px,stroke-dasharray:none,stroke:#B45309,fill:#FEF3C7,color:#78350F
+	classDef Endpoint stroke-width:1.5px,stroke-dasharray:none,stroke:#334155,fill:#F8FAFC,color:#0F172A
+	style backend fill:transparent,stroke:#94A3B8,stroke-width:1px,stroke-dasharray:6 4,color:#475569
+	style applicationHost fill:transparent,stroke:#2563EB,stroke-width:1px,stroke-dasharray:4 3,color:#1E3A8A
 	linkStyle default stroke:#64748B,stroke-width:1.5px
 ```
+
+### Performance Overhead
+
+The claim that TLS processing within the same machine that hosts the application introduces significant CPU overhead is based on an outdated view of how modern TLS stacks execute cryptography.
+
+TLS is implemented in highly optimized native libraries such as OpenSSL, BoringSSL, or SChannel, which map cryptographic operations to CPU-level optimizations across the entire TLS pipeline.
+
+Symmetric cryptography (AES-GCM, ChaCha20-Poly1305) is directly accelerated by dedicated CPU instruction set extensions such as **AES-NI**, **VAES**, and **PCLMULQDQ**, enabling hardware-level execution of bulk encryption operations.
+
+Asymmetric cryptography (RSA, ECDSA, ECDH), used during handshake and certificate validation, is accelerated through highly optimized big-integer arithmetic, vectorized CPU instructions (AVX2/AVX-512), and constant-time implementations in modern cryptographic libraries.
+
+As a result, both symmetric and asymmetric components of TLS benefit from CPU-level hardware acceleration and low-level optimizations, eliminating the notion of TLS as a general-purpose CPU-heavy workload in modern systems.
 
 ## How Certificate Selection Works During TLS
 
@@ -195,7 +213,7 @@ The server-side flow is as follows:
 1. Receive the incoming TLS record.
 2. Parse the record as [TLSPlaintext][rfc_8446_tlsplaintext] and verify that it contains a [Handshake][rfc_8446_handshake] message with a [ClientHello][rfc_8446_clienthello] body.
 3. Extract the client capabilities relevant to certificate selection from ClientHello.
-4. Select the appropriate certificate based on those capabilities and your server’s selection policy.
+4. Select the appropriate certificate based on those capabilities and your server's selection policy.
 5. Respond with [ServerHello][rfc_8446_serverhello] and continue handshake, including Certificate message.
 
 ### How to get client capabilities
@@ -211,7 +229,7 @@ The exact location of the information needed for certificate selection depends o
 
 ### How the Server Chooses a Certificate
 
-The actual certificate to present is chosen by considering both the client’s capabilities and the web server’s certificate selection policy.
+The actual certificate to present is chosen by considering both the client's capabilities and the web server's certificate selection policy.
 
 The specific selection policy is determined by the server implementation and may depend on organizational requirements or security policies.
 
@@ -222,7 +240,7 @@ Typical strategies include:
 
 This is the core mechanism for dynamic certificate selection based on client capabilities.
 
-## Implement using ASP.NET Core Kestrel
+## Implement with ASP.NET Core Kestrel
 
 Since ASP.NET Core 2.1, Kestrel provides the ability to configure TLS handshake behavior via [`HttpsConnectionAdapterOptions`][ms_learn_HttpsConnectionAdapterOption].
 
@@ -295,3 +313,6 @@ If you found this article useful, feel free to buy the author [a cup of coffee](
 [ms_learn_IMemoryPoolFeature]: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.connections.features.imemorypoolfeature
 [ms_learn_IMemoryPoolFeature_MemoryPool]: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.connections.features.imemorypoolfeature.memorypool
 [ms-learn-X509Certificate2]: https://learn.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate2
+[mermaid-dia-intro]: https://mermaid.live/edit#pako:eNqVVVFvqjAY_StNzd7QgECBZlmuMnjaXuaedrlZKlQl1paUks1r_O-3IEwRl9w9YPjOd3pOv9NGDjAVGYUYrpj4SDdEKvD0kvC7O8A1XiY8UcuqzDktyyexztPfCZy39f1SPjRYAv80PJJuKc_e9VOInKuaeoJA1EItM2U55epd7Qv6TjQtbGpQ12BWy74sZkBwtr_BX17x5x2f1D7h42J2Y1F6tSisFzXkSxvFymfCyZpKTX99WtSk3QloGDqUtRRV0aRSVsu1JMUGtGOfp23VLvVOdS_IGqrJtaqkjKhc8HIQDrgfjx_AdbKDTP6Pln5Pu8bAeDwG_f2fq1amP40eo1R71l6ZK7lfB1BuSEExWMlxmsv0eIuFMY4u9nQ21I1XNryLGp4VBcvTJrxBdrp9OvNBXN920qsOKctHugLt1SmVFFs6_sgztcHWxC0-jRbKiB5PSrLHXHDaonjkeK6LAmOVM4ZH0TTyY9NIBRMSj8zY8qaznose8ecWZuwhFLUWYRjPY6uzsGwncvoWF3H93GruuLbZTRNHsR16nZXn264Z96y6k_y5j207lut2Pn48i8Nhas1d664yaLhKEl4WROqj-tIKnJk9943-Hm7tAAGnMzmdWm3Ccr5dNEYZXZGKdcPgEXI8x58bw9mgAdcyzyBeEVZSA-6o3JG6hoeEA5BAtaE7mkCsXzMitwk0Tjgje1GprrGWmpPwo5YrCH8TYgf1fJUW1H9A682XfFVkRNHHXC8gZ4qOhMpQVFxBHDQKEB_gJ8RTbzpBVoAC07ZN10IuMuAeYsueuKYZOFNH__peYFtHA_5tTM1J4PhTFCDTRTZyA-QbkGa5EvL59N1oPh_Hf1B4NGo
+[mermaid-dia-common-approach]: https://mermaid.live/edit#pako:eNqVVctuozAU_RXLUXdQ8X5YVTWEgGbRbiZdzTCqHHAICrGRcdRmovz7GAJNIInULCLic889h_uQ2cOUZQQiuCzZR7rCXICXXwl9eABU4nVCE7HY1gUldf3C8iL9k8Bpd35a8OcWS-DflofTNaHZu_xVrKCioR4hEHVQx0zLglDxLnYVeceSFrZn0JxB0Mj-mgeA0XJ3hb8Y8ac9Hzc-4WweXElKR0lhk9SSz21EWb9iinPCJf3tZd6QNkegZcim5Jxtq7Yr9XaRc1ytQFf2qdpO7YxCspzIeCQfX8FzuyPSpA7zcFWVRYpFwehPVjcNDU4IaKAzucGYBortQ748J2WbWV_MADyp6jMYD_Ci9d-jpbdpYwyoqgqGfTidOplhWbKMWuzKbjNHcj_2oF7hiiCw5Gpa8PRwjYUQis7e6WQoA2_l5cpL-KztF72T4eNqXbTrZiQdRXBdz8gSdBtaC87WRP0oMrFC-qNdfSodlGFZHud4hyijpEPRxHJt2_GVZVGWaBIZkRdrSspKxtFEi3XXCAYussT7LbTYdZyoswjDeBrrvYVuWpE1tDjf0rutppZtan01cRSbodtbuZ5pa_HAqp_k_T6maem23ft4cRCHl11rd61fZdByBce0rjCXo_rS8q3AnHrK8B2uvYEDrN7kOLWTSXNJ3HaY-a6rOd9wsIDZO_iGpWnRyWF0ndw2M2zHjKb3memRGXhtz8qCruetYUaWeFv2s0ETx3Itb6zbjAoqMOdFBtESlzVR4IbwDW7OcJ9QABIoVmQj704k_2aYrxOoHPES79hW9IGcS05CD1KuwvQ3Yxso69tKQXlt56sv-W2VYUFmhUzAJ4qcMOEh21IBkWu2EhDt4SdEjvbo6L6re57tGLpvmY4CdxCppvFo-b5mWLopV8nwzIMC_7Wu2qNveYbjO5pspWP7jswgWSEYfz1-btuv7uE_Jh6lrw
+[mermaid-dia-optimal-approach]: https://mermaid.live/edit#pako:eNqVVdtuozAQ_RXLUd-g4n6xqmoJBe1D-7Lp0y6rygEnQSE2so3abJR_X0MgF5JK7UOUzPGZOZ4zQ9jBnBUEIrio2Hu-wlyC518ZvbsDVOEio5mcN6KkRIhntizzPxmc9vHDnD92WAb_djycrwkt3tSnZiWVLfUAgaSHemZelYTKN7mtyRtWtLiLQRuDqC37axYBRqvtDf58xJ8OfNzqxE-z6EZSPkqK26SOfC4jK_GCKV4Sruivz7OWtDkAHUOZsuSsqTtXRDNfclyvQN_2qdu-2hkF13VV5liWjP5kojUmOiGghY4557cYkIsBHMBWhvZf6lqcVF0tceUueND1RzAezZWpX6Pln9PGGNB1HVy2cor6MpdtqTaE3Fb9zo3K_dgBscI1QWDB9bzk-f4WCyGUnN3pJKgOXqvrZVbw2SCuvFPHh6W5suvTk3x0goV4IgvQ756QnK2J_l4WcoXMe7f-0HqowKo9zvEWUUZJj6KJ47uuF2qLsqrQJLGSIDW0nFWMo4mRmr4VXaioFr8vYaS-5yW9RByn09QcJEzbSZxLifO9_bbU1HFtY-gmTVI79gcpP7BdI72QGib5fR3bdkzXHXSCNErja9e6XRtWGXRcyTEVNeZqVMdaoRPZ00C7vMOtG3jAGUQOUzuJjB7_z8Us17OT6RfEHGAfh5TYUdB1VJV0PesEC7LATTU4hyae4zvBuG5rJNTgkpcFRAtcCaLBDeEb3MZwl1EAMihXZEMyiNTPAvN1BrUDXuEta-RwsOSKk9G9Kldj-puxDVT9Naqg-rtcro7lm7rAkjyVKgFvjqiyoCA8Zg2VEPl-VwOiHfyAyDPuPTP0zSBwPcsMHdvT4BYi3bbunTA0LMe01aStwN5r8F8na9yHTmB5oWcoLz039FQGKUrJ-MvhPde97vb_AQikdVM
