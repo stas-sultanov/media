@@ -1,0 +1,15 @@
+{
+  "id": "extra-monitor",
+  "title": "Azure Observability Without Reinventing the Wheel",
+  "canonical_file": "article.md",
+  "default_format": "markdown",
+  "publication_urls": {},
+  "migration": {
+    "date": "2026-10-25",
+    "from": "src/extra-monitor.md",
+    "source_commit": "e28af2097c65ac32b365827f26e7b9710d8cb91c",
+    "source_blob": "d3235f7531a806a4ef064092279ab190238b51f1",
+    "content_changed": false
+  },
+  "available_context": "No earlier discussion supplied for this article."
+}

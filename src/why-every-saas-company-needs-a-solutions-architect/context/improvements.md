@@ -1,0 +1,178 @@
+# Article improvement backlog
+
+Source: article-review discussion supplied in this session. IDs preserve the original SA-01–SA-18 list. Explanations below consolidate that discussion; they are not a verbatim transcript. Nothing is marked implemented by this migration.
+
+## Working organization
+
+| Block | Scope | IDs |
+| --- | --- | --- |
+| 1 | Thesis and scope | SA-01, SA-14, SA-15 |
+| 2 | Vision and accountability | SA-02, SA-03, SA-04, SA-16 |
+| 3 | Competence and development | SA-05, SA-06, SA-07, SA-08 |
+| 4 | Acquiring capability | SA-09, SA-10, SA-11, SA-12, SA-13 |
+| 5 | Lifecycle and language | SA-17, SA-18 |
+
+Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, SA-03, SA-05, SA-06, SA-09, SA-14, SA-15.
+
+## SA-01 — Add an explicit scope disclaimer
+
+- **Block:** 1
+- **Proposal:** Clarify that many IT solutions benefit from an SA; focus on SaaS and its continuous evolution and operating responsibility.
+- **Reasoning:** Avoids implying that the need is exclusive to SaaS. Connect long product lifetime, ongoing delivery, provider-owned operations, business demands and technical debt to continuous architectural coherence.
+- **Status / author decision:** Author proposed the scope note; final wording pending.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-02 — Distinguish distributed work from unified vision
+
+- **Block:** 2
+- **Proposal:** Explain: architectural activities can be delegated, while integrated vision and final accountability need a clear holder.
+- **Reasoning:** Prevents readers interpreting the claim as a ban on multiple architects. The argument is about maintaining an integrated mental model and resolving cross-cutting trade-offs.
+- **Status / author decision:** Author explicitly defended the vision-holder principle; final wording pending.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-03 — Explain architecture by aggregation
+
+- **Block:** 2
+- **Proposal:** Explain why several people with partial competence do not automatically constitute one sufficiently broad architect.
+- **Reasoning:** Knowledge can remain fragmented, communication loses context, incentives conflict and no participant necessarily assesses the entire solution at once. Avoid claiming that collaboration itself cannot work.
+- **Status / author decision:** Consistent with the author's explicit objection; wording pending.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-04 — Allow multiple SAs with coherent direction
+
+- **Block:** 2
+- **Proposal:** Explain that large products can have multiple SAs with clear boundaries and a coherent overall architectural direction.
+- **Reasoning:** Avoids an artificial one-person constraint while preserving accountability for integration across domains, platforms and components.
+- **Status / author decision:** Author explicitly allowed multiple SAs; wording pending.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-05 — Explain what internal promotion changes
+
+- **Block:** 3
+- **Proposal:** Add that promotion grants title, authority and mandate; it does not supply missing experience or skills.
+- **Reasoning:** Product familiarity or being the strongest developer does not itself produce breadth across systems, businesses, infrastructure, failures and trade-offs.
+- **Status / author decision:** Explicit addition requested by author; wording pending.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-06 — Explain mentoring and exposure constraints
+
+- **Block:** 3
+- **Proposal:** Ask who will develop the candidate and how varied architectural exposure will be provided.
+- **Reasoning:** A company without a mature architect may lack the mentor and environment needed to develop one. A single product may not provide the needed breadth quickly; promotion alone does not solve that.
+- **Status / author decision:** Author raised the mechanism problem; final scope and wording pending.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-07 — Describe the consulting-company exception
+
+- **Block:** 3
+- **Proposal:** Mention mature consulting or outsourcing practices with senior mentors and rotations.
+- **Reasoning:** Multiple clients and industries can provide structured exposure to different architectures, failures and constraints. This explains a development mechanism; it is not evidence that only outsourcing firms can grow architects.
+- **Status / author decision:** Proposal; no separate approval recorded.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-08 — Explain experience requirements
+
+- **Block:** 3
+- **Proposal:** Keep strong seniority expectations and explain the production judgment and accumulated breadth behind years of experience.
+- **Reasoning:** Exact year thresholds can distract from the real requirement: having built, operated and changed systems and lived the consequences. The profile exists; the assistant withdrew its initial near-impossibility claim.
+- **Status / author decision:** Proposal; author defended the existence and relevance of the profile.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-09 — Retain the defined-period external-SA model
+
+- **Block:** 4
+- **Proposal:** Present 12–36 months as a practical capability-establishment option, with scope and transition outcomes.
+- **Reasoning:** Answers how a company without architecture capability can acquire it. Work includes vision, principles, target state, governance, implementation involvement and developing or recruiting a successor. Duration is a proposed engagement range, not an evidenced universal norm.
+- **Status / author decision:** Author defended the model; exact revised framing pending.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-10 — Describe permanent recruitment as another route
+
+- **Block:** 4
+- **Proposal:** Present permanent hire and temporary external engagement as legitimate acquisition choices.
+- **Reasoning:** Keeps the focus on acquiring capability and reduces the impression that the thesis depends on selling one engagement model. Do not assume permanent hiring is always best or temporary hiring always fastest.
+- **Status / author decision:** Proposal; no separate approval recorded.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-11 — Require named consultancy accountability
+
+- **Block:** 4
+- **Proposal:** When using a consultancy, identify the individual architect accountable for the complete solution.
+- **Reasoning:** A collection of consultants, workshops and documents can reproduce fragmentation if nobody owns integration and architectural decisions.
+- **Status / author decision:** Proposal; no separate approval recorded.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-12 — Narrow claims about architects' tenure
+
+- **Block:** 4
+- **Proposal:** Remove or qualify the assertion that SAs by nature do not stay long at one company.
+- **Reasoning:** Tenure is not intrinsic to the function. Explain the benefit of varied experience and transition periods without an unnecessary unsupported universal claim.
+- **Status / author decision:** Proposal; no separate approval recorded.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-13 — Explain vendor incentives
+
+- **Block:** 4
+- **Proposal:** Frame the concern as incentive alignment and scope of responsibility rather than a universal accusation about ethics.
+- **Reasoning:** Vendor architects operate within commercial and delivery constraints. The company's architecture owner must be able to recommend alternatives or less technology when appropriate.
+- **Status / author decision:** Proposal; no separate approval recorded.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-14 — Distinguish function from formal title
+
+- **Block:** 1
+- **Proposal:** Explain that a suitably qualified, empowered person may perform the SA function under another formal title.
+- **Reasoning:** Prevents dismissal based on corporate nomenclature, while retaining the author's requirement for competence, focus and integrated accountability. A title alone does not establish the capability.
+- **Status / author decision:** Proposal; no separate approval recorded.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-15 — Restate the model in the conclusion
+
+- **Block:** 1
+- **Proposal:** Make coherent architectural vision and the balance of Business + Domain against Software + Infrastructure the final takeaway.
+- **Reasoning:** Leaves the reader with the article's causal model rather than merely a hiring recommendation. Preserves Demand and Capability as the central conceptual structure.
+- **Status / author decision:** Proposal; no separate approval recorded.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-16 — Show the failure mechanism
+
+- **Block:** 2
+- **Proposal:** Add a concise chain from local optimization through inconsistent choices and duplication to operational complexity, cost and risk.
+- **Reasoning:** Makes the business case tangible and explains why missing integration matters to executives. Use it as a plausible mechanism, not an inevitable outcome of every local decision.
+- **Status / author decision:** Proposal; no separate approval recorded.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-17 — Strengthen continuity through delivery and operation
+
+- **Block:** 5
+- **Proposal:** Emphasize implementation, production feedback, incidents, evolution and major changes.
+- **Reasoning:** Architectural quality is tested by consequences in operation, not diagrams alone. Continuity supports learning and prevents erosion of the agreed design.
+- **Status / author decision:** Proposal; no separate approval recorded.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+
+## SA-18 — Perform a final language pass
+
+- **Block:** 5
+- **Proposal:** Correct wording and typographical issues, including Infrastructure realtiy → Infrastructure reality.
+- **Reasoning:** Language errors can distract from a senior professional argument. Perform after substantive decisions so editing does not obscure changes in meaning.
+- **Status / author decision:** Proposal; no separate approval recorded.
+- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
+- **Implemented:** No.
+

@@ -1,0 +1,17 @@
+{
+  "id": "why-every-saas-company-needs-a-solutions-architect",
+  "title": "Why Every SaaS Company Needs a Solutions Architect",
+  "canonical_file": "article.md",
+  "default_format": "markdown",
+  "publication_urls": {
+    "devto": "https://dev.to/stas-sultanov/why-every-saas-company-needs-a-solutions-architect-31a1"
+  },
+  "migration": {
+    "date": "2026-10-25",
+    "from": "src/why-every-saas-company-needs-a-solutions-architect.md",
+    "source_commit": "e28af2097c65ac32b365827f26e7b9710d8cb91c",
+    "source_blob": "2d895a992b99daeb50f32e9fec0bf976f40c5d66",
+    "content_changed": false
+  },
+  "available_context": "Article-review discussion supplied in this session; see context index."
+}

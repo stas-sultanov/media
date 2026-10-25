@@ -1,0 +1,15 @@
+{
+  "id": "kestrel-tls-certificate-selection",
+  "title": "Serving RSA and ECDSA from One ASP.NET Core Kestrel Endpoint",
+  "canonical_file": "article.md",
+  "default_format": "markdown",
+  "publication_urls": {},
+  "migration": {
+    "date": "2026-10-25",
+    "from": "src/kestrel-tls-certificate-selection.md",
+    "source_commit": "e28af2097c65ac32b365827f26e7b9710d8cb91c",
+    "source_blob": "a5b076d3a0c818bac46763107d1cafb78fd9fb98",
+    "content_changed": false
+  },
+  "available_context": "No earlier discussion supplied for this article."
+}
