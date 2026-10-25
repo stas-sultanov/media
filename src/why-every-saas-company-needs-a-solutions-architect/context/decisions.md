@@ -14,3 +14,7 @@ This migration preserves the existing article text. It does not approve all edit
 - The author defended the practical, defined-period external-SA acquisition model. Do not remove it based on the assistant's initial objection. Exact presentation and alternatives remain proposals.
 - The author rejected the claim that the experience profile was almost impossible, citing their own experience. The assistant withdrew that characterization.
 - The review backlog and five-block organization are working proposals. No blanket approval or agreed final replacement prose was supplied.
+
+## History preservation — renewed instruction, 2026-10-25
+
+The author explicitly requested implementing the repository structure and saving all available discussion about the current article changes in GitHub for history. The structure was already present when checked. The [dialogue supplement](conversations/2026-10-25-review-dialogue-supplement.md) now preserves both sides of the substantive review, including original objections, subsequent corrections, proposed wording and the original 18-item list. It supplements the earlier excerpts and summary; it does not replace them or change proposal approvals. The canonical article remains unchanged by this context sync.
