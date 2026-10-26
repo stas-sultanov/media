@@ -58,3 +58,14 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Agreed addition:**
 
 > A committee of partial views does not create one complete mind; they lack shared context and unified accountability.
+
+## SA-04 — Multiple SAs and end-to-end accountability — 2026-10-26
+
+- **Status:** Approved by the author and implemented in [article.md](../article.md).
+- **What changed:** Added the agreed sentence as a separate paragraph after the SA-03 committee paragraph and before the section's concluding “Only when a single role owns this process end to end…” statement.
+- **Why:** Clarify that a large product may have several Solutions Architects while accountability for the complete solution remains clearly owned. This preserves the unified-vision thesis without implying that only one architect may contribute.
+- **Provenance:** After hearing the section with the proposed insertion, the author authorized the change with “Да? Хорошо. Добавь”. See [discussion and approval](conversations/2026-10-26-sa-04-multiple-architects.md).
+- **Scope:** Only SA-04 is resolved by this change. Other backlog statuses and the surrounding article are preserved. The article addition and supporting history belong to one separate SA-04 commit.
+- **Agreed addition:**
+
+> Large products may have more than one Solutions Architect, but accountability for the end-to-end solution must be clearly owned.

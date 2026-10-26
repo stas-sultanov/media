@@ -111,6 +111,8 @@ This process cannot be reliably split across multiple roles. Activities can be d
 
 A committee of partial views does not create one complete mind; they lack shared context and unified accountability.
 
+Large products may have more than one Solutions Architect, but accountability for the end-to-end solution must be clearly owned.
+
 Only when a single role owns this process end to end does the balance hold and the product remain viable.
 
 That single accountable role is the **Solutions Architect**.

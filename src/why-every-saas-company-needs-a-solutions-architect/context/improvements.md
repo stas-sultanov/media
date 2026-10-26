@@ -58,9 +58,13 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 - **Block:** 2
 - **Proposal:** Explain that large products can have multiple SAs with clear boundaries and a coherent overall architectural direction.
 - **Reasoning:** Avoids an artificial one-person constraint while preserving accountability for integration across domains, platforms and components.
-- **Status / author decision:** Author explicitly allowed multiple SAs; wording pending.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Status / author decision:** Approved and implemented on 2026-10-26. After reviewing the insertion in the section, the author authorized it with “Да? Хорошо. Добавь”.
+- **Agreed replacement text:** Separate paragraph after the SA-03 committee paragraph in “How does the SA do this in practice?”, before the concluding “Only when a single role owns this process end to end…” statement:
+
+  > Large products may have more than one Solutions Architect, but accountability for the end-to-end solution must be clearly owned.
+
+- **Implemented:** Yes — inserted in [article.md](../article.md); surrounding text preserved.
+- **History:** [Author decision](decisions.md#sa-04--multiple-sas-and-end-to-end-accountability--2026-10-26) and [discussion and approval](conversations/2026-10-26-sa-04-multiple-architects.md).
 
 ## SA-05 — Explain what internal promotion changes
 
