@@ -31,3 +31,19 @@ The author explicitly requested implementing the repository structure and saving
 - **Agreed addition:**
 
 > While many businesses that rely on IT solutions need an IT Solutions Architect, this article focuses on SaaS companies, where the IT solution itself is the product. Building and operating it is the core of the business, making the Solutions Architect’s role especially important.
+
+## SA-02 — Delegated activities and solution vision — 2026-10-26
+
+- **Status:** Approved by the author and implemented in [article.md](../article.md).
+- **What changed:** Added one sentence immediately after “This process cannot be reliably split across multiple roles.” in “How does the SA do this in practice?”.
+- **Why:** Distinguish delegable activities from the author's requirement for an integrated solution vision held in one mind, with corresponding accountability for decisions.
+- **Author corrections:** Use “solution vision” rather than “architectural vision” to retain a broader vision of the solution; use “can only” rather than “must” to express the intended restriction rather than a prescriptive instruction.
+- **Provenance:** The author approved the final sentence with “Да, так и оставляем” and then authorized the separate-commit workflow with “Давай”. See [discussion excerpts and approvals](conversations/2026-10-26-sa-02-solution-vision.md).
+- **Scope:** Only SA-02 is resolved by this change. Other backlog items retain their existing status.
+- **Agreed addition:**
+
+> Activities can be delegated, but the solution vision can only live in one mind, with corresponding accountability for decisions.
+
+## Revision commit workflow — 2026-10-26
+
+The author asked whether to apply revisions together or as separate commits, accepted the recommendation of one commit per approved SA item, and authorized SA-02 on that basis. Each such commit includes the article change together with its date, rationale, agreed wording, discussion provenance and backlog status. See [workflow discussion](conversations/2026-10-26-sa-02-solution-vision.md#commit-workflow-discussion--verbatim).

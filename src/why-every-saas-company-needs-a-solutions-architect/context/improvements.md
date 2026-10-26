@@ -30,11 +30,15 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 ## SA-02 — Distinguish distributed work from unified vision
 
 - **Block:** 2
-- **Proposal:** Explain: architectural activities can be delegated, while integrated vision and final accountability need a clear holder.
-- **Reasoning:** Prevents readers interpreting the claim as a ban on multiple architects. The argument is about maintaining an integrated mental model and resolving cross-cutting trade-offs.
-- **Status / author decision:** Author explicitly defended the vision-holder principle; final wording pending.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Proposal:** Explain that activities can be delegated while the solution vision lives in one mind, with corresponding accountability for decisions.
+- **Reasoning:** Distinguishes distributed execution from the author's integrated vision-holder thesis. “Solution vision” preserves the broader scope; “can only” expresses the author's intended restriction rather than the prescription conveyed by “must”.
+- **Status / author decision:** Approved and implemented on 2026-10-26. The author chose the final wording and approved it with “Да, так и оставляем”.
+- **Agreed replacement text:** Addition immediately after “This process cannot be reliably split across multiple roles.”:
+
+  > Activities can be delegated, but the solution vision can only live in one mind, with corresponding accountability for decisions.
+
+- **Implemented:** Yes — added to [article.md](../article.md) in “How does the SA do this in practice?”; surrounding text preserved.
+- **History:** [Author decision](decisions.md#sa-02--delegated-activities-and-solution-vision--2026-10-26) and [discussion excerpts and approval](conversations/2026-10-26-sa-02-solution-vision.md).
 
 ## SA-03 — Explain architecture by aggregation
 

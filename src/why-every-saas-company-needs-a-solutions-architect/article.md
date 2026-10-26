@@ -107,7 +107,7 @@ The SA does this through an ongoing process that looks like this:
 - **Negotiate and document the solution shape**: define how the solution must look so it is truly buildable and operable, with explicit trade‑offs instead of silent debt.
 - **Stay through implementation**: ensure what gets delivered still matches that agreed shape and has not been quietly degraded into something unstable, unmaintainable, or unprofitable.
 
-This process cannot be reliably split across multiple roles. When it is fragmented, every group protects its own priority, and nobody owns the balance.
+This process cannot be reliably split across multiple roles. Activities can be delegated, but the solution vision can only live in one mind, with corresponding accountability for decisions. When it is fragmented, every group protects its own priority, and nobody owns the balance.
 
 Only when a single role owns this process end to end does the balance hold and the product remain viable.
 
