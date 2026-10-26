@@ -65,7 +65,7 @@ Instead, each group defends its own priority:
 - Engineering optimizes for shipping code.
 - Operations optimizes for stability and keeping production up.
 
-Individually, each of these priorities is rational. Together, they pull the solution apart.
+Individually, each of these priorities is rational. However, without someone evaluating their combined impact on the whole solution, local decisions can create duplicated capabilities, conflicting designs, and growing operational complexity. The business pays through higher costs, more failures, and slower delivery.
 
 This is the structural gap.
 

@@ -193,3 +193,15 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Scope:** Only this conclusion paragraph is changed; other article text and backlog statuses are preserved.
 
 > The SA maintains a coherent vision for the whole solution and continuously balances Demand (Business + Domain) against Capability (Software + Infrastructure). This keeps the product deliverable, operable, and economically viable.
+
+## SA-16 — Local decisions and business consequences — 2026-10-26
+
+- **Status:** Approved and implemented.
+- **Change:** Replaced the two sentences following the group-priority list in “Why does no one own the balance?” with the approved paragraph below.
+- **Why:** Explain the mechanism from local decisions to duplication, conflicting designs, operational complexity and business costs, failures and delivery delays.
+- **Author refinement:** Add “However” before “without” to connect individually rational priorities to their combined consequences.
+- **Author approval:** “отлично . принимаем записываем и дальше”.
+- **History:** [Original, refinement and approval](conversations/2026-10-26-sa-16-local-decisions.md).
+- **Scope:** Only SA-16 is applied; all other article text and backlog statuses are preserved.
+
+> Individually, each of these priorities is rational. However, without someone evaluating their combined impact on the whole solution, local decisions can create duplicated capabilities, conflicting designs, and growing operational complexity. The business pays through higher costs, more failures, and slower delivery.

@@ -204,11 +204,15 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 ## SA-16 — Show the failure mechanism
 
 - **Block:** 2
-- **Proposal:** Add a concise chain from local optimization through inconsistent choices and duplication to operational complexity, cost and risk.
-- **Reasoning:** Makes the business case tangible and explains why missing integration matters to executives. Use it as a plausible mechanism, not an inevitable outcome of every local decision.
-- **Status / author decision:** Proposal; no separate approval recorded.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Proposal:** Explain how local decisions can create duplication, conflicting designs and operational complexity, leading to business costs, failures and slower delivery.
+- **Reasoning:** Makes the mechanism concrete rather than merely saying groups pull the solution apart. “Can” frames these as possible consequences.
+- **Status / author decision:** Approved and implemented, 2026-10-26. Author requested “However” and accepted the revised paragraph.
+- **Agreed replacement text:**
+
+  > Individually, each of these priorities is rational. However, without someone evaluating their combined impact on the whole solution, local decisions can create duplicated capabilities, conflicting designs, and growing operational complexity. The business pays through higher costs, more failures, and slower delivery.
+
+- **Implemented:** Yes — paragraph following the group-priority list in “Why does no one own the balance?”.
+- **History:** [Discussion and approval](conversations/2026-10-26-sa-16-local-decisions.md).
 
 ## SA-17 — Strengthen continuity through delivery and operation
 
