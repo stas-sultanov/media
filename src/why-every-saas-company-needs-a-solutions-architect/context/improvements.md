@@ -178,11 +178,15 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 ## SA-14 — Distinguish function from formal title
 
 - **Block:** 1
-- **Proposal:** Explain that a suitably qualified, empowered person may perform the SA function under another formal title.
-- **Reasoning:** Prevents dismissal based on corporate nomenclature, while retaining the author's requirement for competence, focus and integrated accountability. A title alone does not establish the capability.
-- **Status / author decision:** Proposal; no separate approval recorded.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Proposal:** Explain that the SA function can be performed under another formal job title.
+- **Reasoning:** Formal naming does not establish or remove the capability. The person must have the qualification, authority, time and end-to-end accountability described by the article.
+- **Status / author decision:** Approved and implemented, 2026-10-26. The author refined the wording and requested a quote.
+- **Agreed replacement text:** Addition as a Markdown blockquote:
+
+  > Of course, the formal job title may differ. The title itself does not matter; what matters is that a qualified person has the authority, time, and end-to-end accountability to perform this role.
+
+- **Implemented:** Yes — after “That role is the **Solutions Architect**.”, before the next section separator.
+- **History:** [Discussion and approval](conversations/2026-10-26-sa-14-formal-title.md).
 
 ## SA-15 — Restate the model in the conclusion
 

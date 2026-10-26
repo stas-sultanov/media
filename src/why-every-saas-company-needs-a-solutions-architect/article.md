@@ -73,6 +73,8 @@ The job of holding Business, Domain, Software, and Infrastructure in balance mus
 
 That role is the **Solutions Architect**.
 
+> Of course, the formal job title may differ. The title itself does not matter; what matters is that a qualified person has the authority, time, and end-to-end accountability to perform this role.
+
 ---
 
 ## What does a Solutions Architect actually do?

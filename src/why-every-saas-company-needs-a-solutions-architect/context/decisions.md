@@ -169,3 +169,16 @@ The author asked whether to apply revisions together or as separate commits, acc
 > A vendor-provided architect operates within their employer’s commercial interests and delivery obligations. These may align with the SaaS company’s interests, but that alignment cannot be assumed.
 >
 > The SaaS company needs a Solutions Architect accountable for the whole solution, including decisions that may conflict with the vendor’s interests.
+
+## SA-14 — Function versus formal title — 2026-10-26
+
+- **Status:** Approved and implemented.
+- **Change:** Inserted the agreed paragraph as a Markdown blockquote after “That role is the **Solutions Architect**.” and before the section separator preceding “What does a Solutions Architect actually do?”.
+- **Why:** A different formal job title does not remove the need for the qualified person, authority, time and end-to-end accountability described in the article. This keeps the argument focused on the function.
+- **Author refinement:** Add “Of course” and explicitly state that the title itself does not matter. The assistant clarified the English distinction between “does not matter” and “does not make sense”.
+- **Approval and formatting:** The author accepted the final wording with “отлично”, then requested “отлично и добавим это как quote”. The approved text is therefore formatted as a blockquote in the article.
+- **History:** [Discussion and approval](conversations/2026-10-26-sa-14-formal-title.md).
+- **Scope:** Only SA-14 is applied; all existing article text and other backlog statuses are preserved.
+- **Agreed addition:**
+
+> Of course, the formal job title may differ. The title itself does not matter; what matters is that a qualified person has the authority, time, and end-to-end accountability to perform this role.
