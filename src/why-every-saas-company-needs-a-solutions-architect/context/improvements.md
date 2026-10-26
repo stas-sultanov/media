@@ -45,9 +45,13 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 - **Block:** 2
 - **Proposal:** Explain why several people with partial competence do not automatically constitute one sufficiently broad architect.
 - **Reasoning:** Knowledge can remain fragmented, communication loses context, incentives conflict and no participant necessarily assesses the entire solution at once. Avoid claiming that collaboration itself cannot work.
-- **Status / author decision:** Consistent with the author's explicit objection; wording pending.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Status / author decision:** Approved and implemented on 2026-10-26. After reviewing the insertion in context, the author authorized it with “Угу. Хорошо, да, давай вставляем, добавляем”.
+- **Agreed replacement text:** Separate paragraph after the process/vision paragraph in “How does the SA do this in practice?”, before “Only when a single role owns this process end to end does the balance hold and the product remain viable.”:
+
+  > A committee of partial views does not create one complete mind; they lack shared context and unified accountability.
+
+- **Implemented:** Yes — inserted in [article.md](../article.md); surrounding text preserved.
+- **History:** [Author decision](decisions.md#sa-03--architecture-by-aggregation--2026-10-26) and [discussion and approval](conversations/2026-10-26-sa-03-architecture-by-aggregation.md).
 
 ## SA-04 — Allow multiple SAs with coherent direction
 

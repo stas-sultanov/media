@@ -109,6 +109,8 @@ The SA does this through an ongoing process that looks like this:
 
 This process cannot be reliably split across multiple roles. Activities can be delegated, but the solution vision can only live in one mind, with corresponding accountability for decisions. When it is fragmented, every group protects its own priority, and nobody owns the balance.
 
+A committee of partial views does not create one complete mind; they lack shared context and unified accountability.
+
 Only when a single role owns this process end to end does the balance hold and the product remain viable.
 
 That single accountable role is the **Solutions Architect**.

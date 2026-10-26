@@ -47,3 +47,14 @@ The author explicitly requested implementing the repository structure and saving
 ## Revision commit workflow — 2026-10-26
 
 The author asked whether to apply revisions together or as separate commits, accepted the recommendation of one commit per approved SA item, and authorized SA-02 on that basis. Each such commit includes the article change together with its date, rationale, agreed wording, discussion provenance and backlog status. See [workflow discussion](conversations/2026-10-26-sa-02-solution-vision.md#commit-workflow-discussion--verbatim).
+
+## SA-03 — Architecture by aggregation — 2026-10-26
+
+- **Status:** Approved by the author and implemented in [article.md](../article.md).
+- **What changed:** Added the agreed sentence as a separate paragraph after the process/vision paragraph in “How does the SA do this in practice?”, before “Only when a single role owns this process end to end does the balance hold and the product remain viable.”
+- **Why:** Explain why combining partial perspectives does not automatically supply the integrated understanding and unified accountability expected from the SA. This supports the distinction between delegated work and unified solution vision established in SA-02.
+- **Provenance:** After the assistant read the surrounding passage and identified the insertion, the author approved with “Угу. Хорошо, да, давай вставляем, добавляем”. See [discussion and approval](conversations/2026-10-26-sa-03-architecture-by-aggregation.md).
+- **Scope:** Only SA-03 is resolved by this change; other backlog statuses are preserved. The article addition and supporting history belong to one separate SA-03 commit.
+- **Agreed addition:**
+
+> A committee of partial views does not create one complete mind; they lack shared context and unified accountability.
