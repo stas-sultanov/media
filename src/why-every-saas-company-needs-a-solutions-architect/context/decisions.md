@@ -132,3 +132,10 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Provenance:** [Discussion](conversations/2026-10-26-sa-09-engagement.md); final paragraph approved with “окей”.
 
 > The most realistic approach is to engage a senior Solutions Architect from outside the company. Plan for at least 12 months: the architect needs time to understand the business, domain, solution, and team, work through organizational constraints, and carry improvements through implementation into production.
+
+## SA-10 — Covered by SA-09 — 2026-10-26
+
+- **Status:** Closed as covered by SA-09; no additional article edit.
+- **Why:** SA-09 replaced the dedicated-contractor wording with “engage a senior Solutions Architect from outside the company”, allowing both permanent recruitment and contract engagement. Another paragraph would duplicate that clarification.
+- **Author approval:** “ок.\nзапиши и идавай дальше”.
+- **History:** [Discussion summary and approval](conversations/2026-10-26-sa-10-covered.md).

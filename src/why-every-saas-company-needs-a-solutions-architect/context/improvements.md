@@ -133,11 +133,12 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 ## SA-10 — Describe permanent recruitment as another route
 
 - **Block:** 4
-- **Proposal:** Present permanent hire and temporary external engagement as legitimate acquisition choices.
-- **Reasoning:** Keeps the focus on acquiring capability and reduces the impression that the thesis depends on selling one engagement model. Do not assume permanent hiring is always best or temporary hiring always fastest.
-- **Status / author decision:** Proposal; no separate approval recorded.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Proposal:** Allow permanent recruitment and external contract engagement.
+- **Reasoning:** The capability matters regardless of employment model. SA-09 removed the dedicated-contractor restriction and already allows both paths.
+- **Status / author decision:** Closed as covered by SA-09, approved 2026-10-26. No additional article wording needed.
+- **Agreed replacement text:** No separate addition; use the approved SA-09 paragraph.
+- **Implemented:** Covered by SA-09; article unchanged in this decision.
+- **History:** [Discussion and approval](conversations/2026-10-26-sa-10-covered.md).
 
 ## SA-11 — Require named consultancy accountability
 
