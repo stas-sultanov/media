@@ -227,12 +227,14 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 - **Implemented:** Yes — final process bullet in “How does the SA do this in practice?”.
 - **History:** [Discussion and approval](conversations/2026-10-26-sa-17-operation.md).
 
-## SA-18 — Perform a final language pass
+## SA-18 — Full language, clarity and logic pass
 
 - **Block:** 5
-- **Proposal:** Correct wording and typographical issues, including Infrastructure realtiy → Infrastructure reality.
-- **Reasoning:** Language errors can distract from a senior professional argument. Perform after substantive decisions so editing does not obscure changes in meaning.
-- **Status / author decision:** Proposal; no separate approval recorded.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
-
+- **Original proposal:** Correct English and typos after substantive decisions.
+- **Author-expanded scope:** Review the entire article for logical consistency, maximum clarity and a living, recognizably personal voice.
+- **Reasoning:** Successive approved insertions created repetition and ambiguous references; the final pass makes them read as one argument while preserving the author's position.
+- **Status / author decision:** Implemented on 2026-10-26 under the author's explicit full-pass instruction. Individual replacement sentences are editorial implementations, not separately attributed author approvals.
+- **Agreed replacement text:** No single replacement paragraph. See the [complete before/after change record](reviews/2026-10-26-sa-18-editorial-review.md).
+- **Implemented:** Yes — 28 documented editorial changes throughout [article.md](../article.md).
+- **Preserved:** Demand/Capability model, one-mind solution vision, competence requirements, minimum-year engagement, formal-title quote, vendor distinction and production involvement. SA-07 remains skipped; SA-10 and SA-11 remain covered.
+- **History:** [Author request and scope](conversations/2026-10-26-sa-18-final-pass.md), [decision](decisions.md#sa-18--full-editorial-and-logic-pass--2026-10-26), and [review](reviews/2026-10-26-sa-18-editorial-review.md).
