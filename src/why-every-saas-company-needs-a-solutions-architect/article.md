@@ -1,3 +1,5 @@
+While many businesses that rely on IT solutions need an IT Solutions Architect, this article focuses on SaaS companies, where the IT solution itself is the product. Building and operating it is the core of the business, making the Solutions Architect’s role especially important.
+
 A SaaS company’s business model depends entirely on the IT solution it builds and operates. If the solution is well-made, it supports the business and enables growth. If it’s made poorly, the business starts to struggle.
 
 That struggle shows up in familiar ways:

@@ -17,11 +17,15 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 ## SA-01 — Add an explicit scope disclaimer
 
 - **Block:** 1
-- **Proposal:** Clarify that many IT solutions benefit from an SA; focus on SaaS and its continuous evolution and operating responsibility.
-- **Reasoning:** Avoids implying that the need is exclusive to SaaS. Connect long product lifetime, ongoing delivery, provider-owned operations, business demands and technical debt to continuous architectural coherence.
-- **Status / author decision:** Author proposed the scope note; final wording pending.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Proposal:** Clarify that many businesses relying on IT solutions need an IT Solutions Architect, then explain the article's focus on SaaS businesses.
+- **Reasoning:** The author chose a business-centered explanation: in SaaS, the IT solution is itself the product, and building and operating it is the core of the business. This explains why the role is especially important without claiming it is the most important company role or that the need is exclusive to SaaS.
+- **Status / author decision:** Approved and implemented on 2026-10-26. The author corrected the initial IT-solution framing to a business perspective and approved the final paragraph with “Отлично. Добавляй”.
+- **Agreed replacement text:** Addition before the existing opening:
+
+  > While many businesses that rely on IT solutions need an IT Solutions Architect, this article focuses on SaaS companies, where the IT solution itself is the product. Building and operating it is the core of the business, making the Solutions Architect’s role especially important.
+
+- **Implemented:** Yes — prepended to [article.md](../article.md); existing article text preserved.
+- **History:** [Author decision](decisions.md#sa-01--business-scope-introduction--2026-10-26) and [discussion excerpts](conversations/2026-10-26-sa-01-scope.md).
 
 ## SA-02 — Distinguish distributed work from unified vision
 
