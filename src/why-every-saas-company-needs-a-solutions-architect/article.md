@@ -107,7 +107,7 @@ The SA does this through an ongoing process that looks like this:
 - **Check it against Software capabilities**: confirm that it can be built with the current stack, safely, on time, and make visible the debt or risk created.
 - **Validate it against Infrastructure realtiy**: ensure that it can run at scale, securely, cost‑effectively, and with the uptime and cost profile the company is willing to own.
 - **Negotiate and document the solution shape**: define how the solution must look so it is truly buildable and operable, with explicit trade‑offs instead of silent debt.
-- **Stay through implementation**: ensure what gets delivered still matches that agreed shape and has not been quietly degraded into something unstable, unmaintainable, or unprofitable.
+- **Stay through implementation and operation**: ensure what gets delivered still matches that agreed shape and has not been quietly degraded into something unstable, unmaintainable, or unprofitable. Use production feedback and incident findings to refine the solution as it evolves.
 
 This process cannot be reliably split across multiple roles. Activities can be delegated, but the solution vision can only live in one mind, with corresponding accountability for decisions. When it is fragmented, every group protects its own priority, and nobody owns the balance.
 

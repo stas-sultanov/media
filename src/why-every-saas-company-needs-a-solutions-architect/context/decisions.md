@@ -205,3 +205,15 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Scope:** Only SA-16 is applied; all other article text and backlog statuses are preserved.
 
 > Individually, each of these priorities is rational. However, without someone evaluating their combined impact on the whole solution, local decisions can create duplicated capabilities, conflicting designs, and growing operational complexity. The business pays through higher costs, more failures, and slower delivery.
+
+## SA-17 — Continue through implementation and operation — 2026-10-26
+
+- **Status:** Approved and implemented.
+- **Change:** Expanded the final process bullet in “How does the SA do this in practice?” to include operation and using production feedback and incident findings to refine the evolving solution.
+- **Why:** Consequences of architectural decisions emerge during operation; the SA needs to use that experience in the solution's continued development.
+- **Author approval:** “подходит”, in response to the exact replacement below.
+- **History:** [Original, proposed wording and approval](conversations/2026-10-26-sa-17-operation.md).
+- **Scope:** Only the agreed process bullet changes. Other article text and backlog statuses are preserved.
+- **Agreed replacement:**
+
+- **Stay through implementation and operation**: ensure what gets delivered still matches that agreed shape and has not been quietly degraded into something unstable, unmaintainable, or unprofitable. Use production feedback and incident findings to refine the solution as it evolves.

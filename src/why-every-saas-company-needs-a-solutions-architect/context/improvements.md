@@ -217,11 +217,15 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 ## SA-17 — Strengthen continuity through delivery and operation
 
 - **Block:** 5
-- **Proposal:** Emphasize implementation, production feedback, incidents, evolution and major changes.
-- **Reasoning:** Architectural quality is tested by consequences in operation, not diagrams alone. Continuity supports learning and prevents erosion of the agreed design.
-- **Status / author decision:** Proposal; no separate approval recorded.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Proposal:** Extend the SA's involvement through operation and use production feedback and incident findings to refine the solution.
+- **Reasoning:** Consequences of architectural decisions emerge in production. Continued involvement enables the SA to learn from operation and preserve the agreed solution shape as it evolves.
+- **Status / author decision:** Approved and implemented, 2026-10-26; author replied “подходит”.
+- **Agreed replacement text:**
+
+  - **Stay through implementation and operation**: ensure what gets delivered still matches that agreed shape and has not been quietly degraded into something unstable, unmaintainable, or unprofitable. Use production feedback and incident findings to refine the solution as it evolves.
+
+- **Implemented:** Yes — final process bullet in “How does the SA do this in practice?”.
+- **History:** [Discussion and approval](conversations/2026-10-26-sa-17-operation.md).
 
 ## SA-18 — Perform a final language pass
 
