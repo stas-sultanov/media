@@ -182,3 +182,14 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Agreed addition:**
 
 > Of course, the formal job title may differ. The title itself does not matter; what matters is that a qualified person has the authority, time, and end-to-end accountability to perform this role.
+
+## SA-15 — Vision and Demand/Capability in the conclusion — 2026-10-26
+
+- **Status:** Approved and implemented.
+- **Change:** Replaced the conclusion paragraph beginning “With an SA, that balance is actively protected” with the approved paragraph below.
+- **Why:** Leave the reader with the concrete purpose of the SA: maintain a coherent vision of the whole solution and continuously balance business/domain demand against software/infrastructure capability.
+- **Author approval:** “да”, in response to the exact proposed replacement and rationale.
+- **History:** [Original, proposal and approval](conversations/2026-10-26-sa-15-conclusion.md).
+- **Scope:** Only this conclusion paragraph is changed; other article text and backlog statuses are preserved.
+
+> The SA maintains a coherent vision for the whole solution and continuously balances Demand (Business + Domain) against Capability (Software + Infrastructure). This keeps the product deliverable, operable, and economically viable.

@@ -213,6 +213,6 @@ Any SaaS company that operates a live product needs a Solutions Architect.
 
 Without an SA, no one is accountable for keeping Business and Domain expectations aligned with what Software and Infrastructure can actually deliver and run. That’s when costs spike, promises break, and reputation is damaged.
 
-With an SA, that balance is actively protected. The product stays deliverable, operable, and economically viable.
+The SA maintains a coherent vision for the whole solution and continuously balances Demand (Business + Domain) against Capability (Software + Infrastructure). This keeps the product deliverable, operable, and economically viable.
 
 A senior SA is not overhead. It is a required function for any serious SaaS business.

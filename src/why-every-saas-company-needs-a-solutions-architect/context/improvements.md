@@ -191,11 +191,15 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 ## SA-15 — Restate the model in the conclusion
 
 - **Block:** 1
-- **Proposal:** Make coherent architectural vision and the balance of Business + Domain against Software + Infrastructure the final takeaway.
-- **Reasoning:** Leaves the reader with the article's causal model rather than merely a hiring recommendation. Preserves Demand and Capability as the central conceptual structure.
-- **Status / author decision:** Proposal; no separate approval recorded.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Proposal:** Link coherent solution vision with the Demand/Capability model in the conclusion.
+- **Reasoning:** Reinforce the SA's concrete purpose: hold the whole solution vision and balance Business + Domain with Software + Infrastructure throughout ongoing work.
+- **Status / author decision:** Approved and implemented, 2026-10-26; author replied “да”.
+- **Agreed replacement text:**
+
+  > The SA maintains a coherent vision for the whole solution and continuously balances Demand (Business + Domain) against Capability (Software + Infrastructure). This keeps the product deliverable, operable, and economically viable.
+
+- **Implemented:** Yes — replaced the conclusion paragraph beginning “With an SA, that balance is actively protected”.
+- **History:** [Original, proposal and approval](conversations/2026-10-26-sa-15-conclusion.md).
 
 ## SA-16 — Show the failure mechanism
 
