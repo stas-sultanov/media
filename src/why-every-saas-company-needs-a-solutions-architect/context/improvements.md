@@ -120,14 +120,15 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 - **Implemented:** Yes — added to [article.md](../article.md). The requirements list, year thresholds and the existing SA-06 paragraph are preserved.
 - **History:** [Author decision](decisions.md#sa-08--depth-and-breadth-behind-experience--2026-10-26) and [discussion and approval](conversations/2026-10-26-sa-08-depth-and-breadth.md).
 
-## SA-09 — Retain the defined-period external-SA model
+## SA-09 — External SA engagement of at least 12 months
 
 - **Block:** 4
-- **Proposal:** Present 12–36 months as a practical capability-establishment option, with scope and transition outcomes.
-- **Reasoning:** Answers how a company without architecture capability can acquire it. Work includes vision, principles, target state, governance, implementation involvement and developing or recruiting a successor. Duration is a proposed engagement range, not an evidenced universal norm.
-- **Status / author decision:** Author defended the model; exact revised framing pending.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Proposal / author decision:** Engage an external senior SA and plan for at least 12 months, replacing the 12–36 month range.
+- **Reasoning:** Onboarding, organizational constraints and implementation into production require sustained participation. Mandatory succession was rejected; contract end does not remove the need for an SA.
+- **Status:** Approved and implemented, 2026-10-26.
+- **Agreed replacement text:** The most realistic approach is to engage a senior Solutions Architect from outside the company. Plan for at least 12 months: the architect needs time to understand the business, domain, solution, and team, work through organizational constraints, and carry improvements through implementation into production.
+- **Implemented:** Yes, first paragraph of “How can a company get a Solutions Architect?”.
+- **History:** [Discussion and approval](conversations/2026-10-26-sa-09-engagement.md).
 
 ## SA-10 — Describe permanent recruitment as another route
 

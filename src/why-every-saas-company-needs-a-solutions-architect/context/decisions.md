@@ -122,3 +122,13 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Agreed addition:**
 
 > The years of experience described below must reflect deep hands-on expertise, responsibility for production outcomes, and exposure to different business and technical conditions.
+
+## SA-09 — External engagement of at least 12 months — 2026-10-26
+
+- **Status:** Approved and implemented.
+- **Change:** Replaced the first paragraph of “How can a company get a Solutions Architect?” with the agreed wording below.
+- **Why:** Allow time to understand business, domain, solution and team, address organizational constraints, and deliver improvements into production. The minimum year is the author's planning recommendation, not a universal measured threshold.
+- **Author correction:** Replace 12–36 months with at least 12 months; do not require a successor or assume an internal employee will become qualified during the engagement.
+- **Provenance:** [Discussion](conversations/2026-10-26-sa-09-engagement.md); final paragraph approved with “окей”.
+
+> The most realistic approach is to engage a senior Solutions Architect from outside the company. Plan for at least 12 months: the architect needs time to understand the business, domain, solution, and team, work through organizational constraints, and carry improvements through implementation into production.

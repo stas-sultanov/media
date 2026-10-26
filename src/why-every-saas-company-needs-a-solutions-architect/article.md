@@ -152,7 +152,7 @@ This profile is rare.
 
 ## How can a company get a Solutions Architect?
 
-The realistic way is to bring in a senior Solutions Architect from the market as a dedicated contractor for 12–36 months, depending on the IT solution.
+The most realistic approach is to engage a senior Solutions Architect from outside the company. Plan for at least 12 months: the architect needs time to understand the business, domain, solution, and team, work through organizational constraints, and carry improvements through implementation into production.
 
 The company must bring in someone who has already seen these failure patterns in multiple environments, already paid the price for getting them wrong, and is motivated to protect the business.
 
