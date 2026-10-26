@@ -139,3 +139,10 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Why:** SA-09 replaced the dedicated-contractor wording with “engage a senior Solutions Architect from outside the company”, allowing both permanent recruitment and contract engagement. Another paragraph would duplicate that clarification.
 - **Author approval:** “ок.\nзапиши и идавай дальше”.
 - **History:** [Discussion summary and approval](conversations/2026-10-26-sa-10-covered.md).
+
+## SA-11 — Covered by SA-02–SA-04 — 2026-10-26
+
+- **Status:** Closed as covered; no additional article edit.
+- **Why:** Existing edits require unified solution vision and individual accountability regardless of whether the architect comes from a consultancy. A consultancy-specific repetition adds no new principle.
+- **Author approval:** “окей. да . давай дальше”.
+- **History:** [Discussion summary](conversations/2026-10-26-sa-11-covered.md).

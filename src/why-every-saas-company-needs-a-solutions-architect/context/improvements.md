@@ -143,11 +143,12 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 ## SA-11 — Require named consultancy accountability
 
 - **Block:** 4
-- **Proposal:** When using a consultancy, identify the individual architect accountable for the complete solution.
-- **Reasoning:** A collection of consultants, workshops and documents can reproduce fragmentation if nobody owns integration and architectural decisions.
-- **Status / author decision:** Proposal; no separate approval recorded.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Proposal:** Require an individual architect accountable for the complete solution when using a consultancy.
+- **Reasoning:** SA-02–SA-04 already establish personal accountability and unified solution vision, regardless of engagement model. Repeating this separately for consultancy would duplicate the argument.
+- **Status / author decision:** Closed as covered by SA-02–SA-04, approved 2026-10-26.
+- **Agreed replacement text:** No additional wording.
+- **Implemented:** Covered by existing edits; no article change in this decision.
+- **History:** [Discussion summary and approval](conversations/2026-10-26-sa-11-covered.md).
 
 ## SA-12 — Narrow claims about architects' tenure
 
