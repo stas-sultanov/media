@@ -69,3 +69,16 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Agreed addition:**
 
 > Large products may have more than one Solutions Architect, but accountability for the end-to-end solution must be clearly owned.
+
+## SA-05 — Promotion and competence — 2026-10-26
+
+- **Status:** Approved by the author and implemented in [article.md](../article.md).
+- **What changed:** Added the agreed sentence as a separate paragraph in “3. Level up an internal employee”, after the assumption and before “This rarely succeeds. Correct judgment in this role…”.
+- **Why:** Promotion grants formal title and mandate; it does not itself create missing competence. The author emphasized that this applies even within the person's original specialty, such as .NET engineering, rather than only to experience with other systems, domains or technologies.
+- **Author correction:** Reject the narrower “other systems” emphasis and use the general statement about competence.
+- **Provenance:** The author approved the revised sentence with “Да” and confirmed the assistant's plan to implement SA-05 as a separate commit with a second “Да”. See [discussion and approvals](conversations/2026-10-26-sa-05-promotion-and-competence.md).
+- **Placement clarification:** The initial assistant response named “Who can play this role?” while referring to the internal-promotion passage. The insertion is in the actual “Level up an internal employee” subsection, where the agreed sentence directly precedes the existing explanation.
+- **Scope:** Only SA-05 is resolved by this change. Other backlog statuses and the remaining article text are preserved.
+- **Agreed addition:**
+
+> Promotion grants title and mandate, not competence.

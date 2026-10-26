@@ -69,11 +69,15 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 ## SA-05 — Explain what internal promotion changes
 
 - **Block:** 3
-- **Proposal:** Add that promotion grants title, authority and mandate; it does not supply missing experience or skills.
-- **Reasoning:** Product familiarity or being the strongest developer does not itself produce breadth across systems, businesses, infrastructure, failures and trade-offs.
-- **Status / author decision:** Explicit addition requested by author; wording pending.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Proposal:** State that promotion grants title and mandate, not competence.
+- **Reasoning:** The author rejected restricting this argument to missing experience with other systems or technologies. An architecture title does not itself create missing competence even within the person's original specialty, such as .NET engineering.
+- **Status / author decision:** Approved and implemented on 2026-10-26. The author approved the revised wording with “Да” and separately confirmed implementation as an individual SA-05 commit.
+- **Agreed replacement text:** Separate paragraph in “3. Level up an internal employee”, after the assumption and before the existing explanation of how experience is accumulated:
+
+  > Promotion grants title and mandate, not competence.
+
+- **Implemented:** Yes — inserted in [article.md](../article.md); surrounding text preserved.
+- **History:** [Author decision](decisions.md#sa-05--promotion-and-competence--2026-10-26) and [discussion and approvals](conversations/2026-10-26-sa-05-promotion-and-competence.md).
 
 ## SA-06 — Explain mentoring and exposure constraints
 

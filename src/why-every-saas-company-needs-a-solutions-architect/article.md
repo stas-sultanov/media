@@ -187,6 +187,8 @@ Shared responsibility becomes no one’s responsibility.
 
 Assumption: mentor a strong internal engineer or delivery lead into an SA over time.
 
+Promotion grants title and mandate, not competence.
+
 This rarely succeeds. Correct judgment in this role comes from years of exposure to different pressures and failures:
 - multiple customers,
 - multiple business models,
