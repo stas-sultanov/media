@@ -189,12 +189,9 @@ Assumption: mentor a strong internal engineer or delivery lead into an SA over t
 
 Promotion grants title and mandate, not competence.
 
-This rarely succeeds. Correct judgment in this role comes from years of exposure to different pressures and failures:
-- multiple customers,
-- multiple business models,
-- multiple domains with different regulatory traps,
-- multiple technology stacks and scaling problems,
-- multiple production outages and cost crises.
+Without an experienced SA to mentor, a SaaS company rarely develops one.
+
+This rarely succeeds. Correct judgment in this role comes from years of exposure to different pressures and failures across different customers and business models, domains with different regulatory traps, technology stacks and scaling problems, production outages and cost crises.
 
 A single SaaS company usually cannot generate that breadth fast enough. It isn’t about intelligence; it’s accumulated scar tissue under different conditions.
 

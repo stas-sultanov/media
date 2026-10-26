@@ -9,6 +9,7 @@ Read [decisions](decisions.md) and [improvements](improvements.md) before changi
 - [SA-03 architecture by aggregation decision](conversations/2026-10-26-sa-03-architecture-by-aggregation.md): proposed sentence, placement reviewed in context, author approval and implementation on 2026-10-26.
 - [SA-04 multiple-architects decision](conversations/2026-10-26-sa-04-multiple-architects.md): multiple SAs with clear end-to-end accountability, reviewed placement, author approval and implementation on 2026-10-26.
 - [SA-05 promotion and competence decision](conversations/2026-10-26-sa-05-promotion-and-competence.md): the author's correction beyond “other systems”, agreed concise sentence, placement and approvals on 2026-10-26.
+- [SA-06 mentoring and experience decision](conversations/2026-10-26-sa-06-mentoring-and-experience.md): shortened mentor sentence, removal of repeated promotion wording, continuous experience enumeration and author approval on 2026-10-26.
 - [Publication comparison](../materials/devto-comparison-2026-10-25.md): comparison against retrieved DEV rendered text.
 - The backlog preserves SA-01 through SA-18; proposals are not blanket-approved.
 

@@ -82,11 +82,19 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 ## SA-06 — Explain mentoring and exposure constraints
 
 - **Block:** 3
-- **Proposal:** Ask who will develop the candidate and how varied architectural exposure will be provided.
-- **Reasoning:** A company without a mature architect may lack the mentor and environment needed to develop one. A single product may not provide the needed breadth quickly; promotion alone does not solve that.
-- **Status / author decision:** Author raised the mechanism problem; final scope and wording pending.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Proposal:** Make the missing-mentor constraint explicit and retain the varied-experience argument with a continuous enumeration.
+- **Reasoning:** A company without an experienced SA may lack the mentor needed to develop one. The author requested a forceful formulation, removed the repeated promotion/competence clause, and rejected the monotonous “multiple” list.
+- **Status / author decision:** Approved and implemented on 2026-10-26. The author accepted the revised enumeration, then confirmed implementation as a separate SA-06 commit with “Да, давай”.
+- **Agreed replacement text:** Add after SA-05 in “3. Level up an internal employee”:
+
+  > Without an experienced SA to mentor, a SaaS company rarely develops one.
+
+  Replace the repetitive bullet list with the following enumeration, joined to the existing sentence about pressures and failures:
+
+  > across different customers and business models, domains with different regulatory traps, technology stacks and scaling problems, production outages and cost crises.
+
+- **Implemented:** Yes — mentor sentence added and enumeration revised in [article.md](../article.md); the rest of the article is preserved.
+- **History:** [Author decision](decisions.md#sa-06--mentoring-constraints-and-varied-experience--2026-10-26) and [discussion and approval](conversations/2026-10-26-sa-06-mentoring-and-experience.md).
 
 ## SA-07 — Describe the consulting-company exception
 

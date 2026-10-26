@@ -82,3 +82,23 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Agreed addition:**
 
 > Promotion grants title and mandate, not competence.
+
+## SA-06 — Mentoring constraints and varied experience — 2026-10-26
+
+- **Status:** Approved by the author and implemented in [article.md](../article.md).
+- **What changed:** Added the shortened mentor sentence after SA-05 in “3. Level up an internal employee”. Replaced the five bullets beginning with “multiple” with the approved continuous enumeration.
+- **Why:** Make the missing-mentor constraint explicit. Avoid repeating SA-05's point about promotion and competence, and remove the monotonous repetition of “multiple” in the experience examples.
+- **Author corrections:** Remove “promotion alone doesn’t create the competence” from the new sentence; use one continuous enumeration instead of repeating “multiple” in every list item.
+- **Provenance:** After reviewing and shortening the proposed text, the author accepted the enumeration with “Хреново звучит Да, оставляем так”, then explicitly confirmed the separate-commit implementation with “Да, давай”. See [discussion and approval](conversations/2026-10-26-sa-06-mentoring-and-experience.md).
+- **Scope:** Only SA-06 is resolved by this change. Other backlog statuses and the rest of the article are preserved. The colon/list transition is joined to the approved “across” phrase as continuous prose.
+- **Agreed addition:**
+
+> Without an experienced SA to mentor, a SaaS company rarely develops one.
+
+- **Agreed experience enumeration:**
+
+> across different customers and business models, domains with different regulatory traps, technology stacks and scaling problems, production outages and cost crises.
+
+- **Resulting explanation:**
+
+> This rarely succeeds. Correct judgment in this role comes from years of exposure to different pressures and failures across different customers and business models, domains with different regulatory traps, technology stacks and scaling problems, production outages and cost crises.
