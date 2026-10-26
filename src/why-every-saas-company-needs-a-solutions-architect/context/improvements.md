@@ -101,9 +101,11 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 - **Block:** 3
 - **Proposal:** Mention mature consulting or outsourcing practices with senior mentors and rotations.
 - **Reasoning:** Multiple clients and industries can provide structured exposure to different architectures, failures and constraints. This explains a development mechanism; it is not evidence that only outsourcing firms can grow architects.
-- **Status / author decision:** Proposal; no separate approval recorded.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Status / author decision:** Skipped on 2026-10-26. After reviewing the proposed caveat, the author questioned its necessity and accepted omission with “Отлично, пропускаем и идем дальше”.
+- **Decision rationale:** Existing “rarely” and “usually” wording already permits exceptions. An explanation of architect development in consulting companies would distract from the article's SaaS focus.
+- **Agreed replacement text:** None — the proposed addition was not adopted; see the discussion record for its wording.
+- **Implemented:** No article change; closed as skipped rather than pending.
+- **History:** [Author decision](decisions.md#sa-07--consulting-company-caveat-skipped--2026-10-26) and [discussion and final decision](conversations/2026-10-26-sa-07-consulting-exception-skipped.md).
 
 ## SA-08 — Explain experience requirements
 

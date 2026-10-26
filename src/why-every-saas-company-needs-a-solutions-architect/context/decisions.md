@@ -102,3 +102,11 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Resulting explanation:**
 
 > This rarely succeeds. Correct judgment in this role comes from years of exposure to different pressures and failures across different customers and business models, domains with different regulatory traps, technology stacks and scaling problems, production outages and cost crises.
+
+## SA-07 — Consulting-company caveat skipped — 2026-10-26
+
+- **Status:** Skipped by the author; no change to [article.md](../article.md).
+- **Proposal considered:** Add a final paragraph to “3. Level up an internal employee” describing mature consulting companies with experienced SA mentors, a structured development process and exposure to different clients, domains and solutions.
+- **Why omitted:** The existing “rarely” and “usually” wording already permits exceptions. Explaining how consulting companies develop architects would distract from the article's SaaS focus.
+- **Provenance:** After hearing the proposed caveat in context, the author asked “А вообще нам это надо” and accepted the recommendation to omit it with “Отлично, пропускаем и идем дальше”. See [discussion and final decision](conversations/2026-10-26-sa-07-consulting-exception-skipped.md).
+- **Scope:** This closes SA-07 as skipped and supersedes the earlier invitation to explore the addition. It does not approve or apply any other item.
