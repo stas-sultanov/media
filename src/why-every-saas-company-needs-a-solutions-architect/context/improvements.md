@@ -163,11 +163,17 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 ## SA-13 — Explain vendor incentives
 
 - **Block:** 4
-- **Proposal:** Frame the concern as incentive alignment and scope of responsibility rather than a universal accusation about ethics.
-- **Reasoning:** Vendor architects operate within commercial and delivery constraints. The company's architecture owner must be able to recommend alternatives or less technology when appropriate.
-- **Status / author decision:** Proposal; no separate approval recorded.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Proposal:** Explain the concern through commercial interests, delivery obligations and accountability.
+- **Reasoning:** Vendor and SaaS-company interests may align, but alignment cannot be assumed. The company needs an SA accountable for the whole solution, including decisions conflicting with vendor interests. This replaces a universal claim about vendor-architect behavior with the structural concern.
+- **Status / author decision:** Approved and implemented, 2026-10-26; author replied “отлично . да”.
+- **Agreed replacement text:**
+
+  > A vendor-provided architect operates within their employer’s commercial interests and delivery obligations. These may align with the SaaS company’s interests, but that alignment cannot be assumed.
+  >
+  > The SaaS company needs a Solutions Architect accountable for the whole solution, including decisions that may conflict with the vendor’s interests.
+
+- **Implemented:** Yes — two explanatory paragraphs in “4. Borrow from a vendor”.
+- **History:** [Discussion and approval](conversations/2026-10-26-sa-13-vendor-incentives.md).
 
 ## SA-14 — Distinguish function from formal title
 

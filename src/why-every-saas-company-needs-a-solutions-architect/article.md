@@ -199,9 +199,9 @@ A single SaaS company usually cannot generate that breadth fast enough. It isn�
 
 Assumption: use an architect provided by an implementation partner or service provider.
 
-A vendor architect’s primary loyalty is to their employer’s commercial safety and delivery success — not to SaaS company.
+A vendor-provided architect operates within their employer’s commercial interests and delivery obligations. These may align with the SaaS company’s interests, but that alignment cannot be assumed.
 
-Even if the SA genuinely wants to help, they will always be forced to propose solutions that work for their employer first.
+The SaaS company needs a Solutions Architect accountable for the whole solution, including decisions that may conflict with the vendor’s interests.
 
 ---
 

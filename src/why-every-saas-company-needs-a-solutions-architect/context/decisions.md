@@ -155,3 +155,17 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Author approval:** The assistant proposed deleting the complete paragraph with this rationale; the author replied “да”.
 - **History:** [Discussion and removed text](conversations/2026-10-26-sa-12-tenure.md).
 - **Scope:** Only this paragraph is removed; all remaining article text and other backlog statuses are preserved.
+
+## SA-13 — Vendor incentives and accountability — 2026-10-26
+
+- **Status:** Approved and implemented.
+- **Change:** Replaced the two explanatory paragraphs following “Assumption…” in “4. Borrow from a vendor”.
+- **Why:** Explain the structural difference in commercial interests, delivery obligations and accountability. Avoid the unsupported universal claim that vendor architects will always be forced to prioritize their employer.
+- **Author approval:** “отлично . да”, approving the exact replacement below.
+- **History:** [Original wording, proposal and approval](conversations/2026-10-26-sa-13-vendor-incentives.md).
+- **Scope:** Only SA-13 is applied; the heading, assumption and rest of the article are preserved.
+- **Agreed replacement:**
+
+> A vendor-provided architect operates within their employer’s commercial interests and delivery obligations. These may align with the SaaS company’s interests, but that alignment cannot be assumed.
+>
+> The SaaS company needs a Solutions Architect accountable for the whole solution, including decisions that may conflict with the vendor’s interests.
