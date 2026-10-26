@@ -146,3 +146,12 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Why:** Existing edits require unified solution vision and individual accountability regardless of whether the architect comes from a consultancy. A consultancy-specific repetition adds no new principle.
 - **Author approval:** “окей. да . давай дальше”.
 - **History:** [Discussion summary](conversations/2026-10-26-sa-11-covered.md).
+
+## SA-12 — Remove intrinsic short-tenure claim — 2026-10-26
+
+- **Status:** Approved and implemented.
+- **Change:** Deleted the entire paragraph beginning “Note that SAs, by nature, don’t stay long at a single company” from “How can a company get a Solutions Architect?”.
+- **Why:** Varied experience is already explained. Its value does not imply an experienced architect must keep changing companies. The paragraph also creates an unnecessary expectation of early departure.
+- **Author approval:** The assistant proposed deleting the complete paragraph with this rationale; the author replied “да”.
+- **History:** [Discussion and removed text](conversations/2026-10-26-sa-12-tenure.md).
+- **Scope:** Only this paragraph is removed; all remaining article text and other backlog statuses are preserved.

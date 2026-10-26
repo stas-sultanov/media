@@ -154,10 +154,11 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 
 - **Block:** 4
 - **Proposal:** Remove or qualify the assertion that SAs by nature do not stay long at one company.
-- **Reasoning:** Tenure is not intrinsic to the function. Explain the benefit of varied experience and transition periods without an unnecessary unsupported universal claim.
-- **Status / author decision:** Proposal; no separate approval recorded.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Reasoning:** Varied experience does not require continued rotation after the architect joins. Its benefits are already covered elsewhere; this paragraph creates an unnecessary expectation of early departure.
+- **Status / author decision:** Approved deletion of the entire paragraph on 2026-10-26; author replied “да”.
+- **Agreed replacement text:** None; delete the paragraph beginning “Note that SAs, by nature, don’t stay long at a single company”.
+- **Implemented:** Yes — paragraph removed from [article.md](../article.md).
+- **History:** [Discussion and removed text](conversations/2026-10-26-sa-12-tenure.md).
 
 ## SA-13 — Explain vendor incentives
 

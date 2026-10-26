@@ -156,8 +156,6 @@ The most realistic approach is to engage a senior Solutions Architect from outsi
 
 The company must bring in someone who has already seen these failure patterns in multiple environments, already paid the price for getting them wrong, and is motivated to protect the business.
 
-Note that SAs, by nature, don’t stay long at a single company. The judgment this role requires comes from switching products and environments — seeing different business models, domains, stacks, and failure modes. That breadth is hard to accumulate inside one product, so senior SAs tend to rotate to build and maintain the experience the role demands.
-
 ---
 
 ## Why isn’t there an alternative?
