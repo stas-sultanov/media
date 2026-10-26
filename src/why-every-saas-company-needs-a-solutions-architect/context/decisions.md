@@ -217,15 +217,3 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Agreed replacement:**
 
 - **Stay through implementation and operation**: ensure what gets delivered still matches that agreed shape and has not been quietly degraded into something unstable, unmaintainable, or unprofitable. Use production feedback and incident findings to refine the solution as it evolves.
-
-## SA-18 — Full editorial and logic pass — 2026-10-26
-
-- **Status:** Implemented under the author's explicit authorization for a full-document editorial pass.
-- **Author instruction:** “проёдись по всему документу”, check logic and maximum clarity, while keeping the text alive and recognizably in the author's voice. See [verbatim request](conversations/2026-10-26-sa-18-final-pass.md).
-- **Scope:** English, repetition, transitions, pronoun clarity and logical consistency. This is broader than the original typo-only description of SA-18 and was explicitly requested by the author.
-- **Key refinements:** Remove duplicated opening/mentoring claims; clarify ownership as one accountable person; align the CTO and workaround discussion with the title-independent role definition; fix grammar, punctuation and “Infrastructure reality”.
-- **Voice:** Keep the author's forceful argument, production language and signature formulations, including “Promotion grants title and mandate, not competence” and “accumulated scar tissue”.
-- **Earlier decisions:** The canonical article now includes the documented editorial refinements to SA-03, SA-04 and SA-06 passages. Earlier records remain historical; their original approved wording is preserved there, with the later before/after changes recorded in the review.
-- **Detailed rationale and wording:** [28 exact changes, with before/after text](reviews/2026-10-26-sa-18-editorial-review.md).
-- **Authorization distinction:** The author authorized performing and saving the review; this entry does not invent separate author approvals for each new sentence.
-- **Validation:** Reversible change accounting, preservation of agreed core passages and experience thresholds, section and relative-link checks, unchanged article line-ending convention, and exact GitHub readback.
