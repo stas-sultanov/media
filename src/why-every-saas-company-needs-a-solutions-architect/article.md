@@ -125,6 +125,8 @@ A real Solutions Architect is rare.
 This is not a theoretical strategist.
 This is a person who has already lived the consequences of bad decisions across multiple environments and can recognize them before they repeat.
 
+The years of experience described below must reflect deep hands-on expertise, responsibility for production outcomes, and exposure to different business and technical conditions.
+
 A strong SA typically has:
 
 - **Business**

@@ -110,11 +110,15 @@ Suggested order: 1 → 2 → 3 → 4 → 5. Original high-value subset: SA-02, S
 ## SA-08 — Explain experience requirements
 
 - **Block:** 3
-- **Proposal:** Keep strong seniority expectations and explain the production judgment and accumulated breadth behind years of experience.
-- **Reasoning:** Exact year thresholds can distract from the real requirement: having built, operated and changed systems and lived the consequences. The profile exists; the assistant withdrew its initial near-impossibility claim.
-- **Status / author decision:** Proposal; author defended the existence and relevance of the profile.
-- **Agreed replacement text:** Pending; no final wording approved in the supplied discussion.
-- **Implemented:** No.
+- **Proposal:** Keep strong seniority expectations and explain the practical depth, production responsibility and accumulated breadth behind years of experience.
+- **Reasoning:** Years must represent deep hands-on expertise, responsibility for production outcomes and exposure to different business and technical conditions. The author defended the existence and relevance of the profile; the assistant withdrew its initial near-impossibility claim. This addition preserves the existing year thresholds.
+- **Status / author decision:** Approved and implemented on 2026-10-26. After reviewing the exact sentence and placement, the author accepted it with “Да. Берем”.
+- **Agreed replacement text:** Add as a separate paragraph in “Who can play this role?”, immediately before “A strong SA typically has:”:
+
+  > The years of experience described below must reflect deep hands-on expertise, responsibility for production outcomes, and exposure to different business and technical conditions.
+
+- **Implemented:** Yes — added to [article.md](../article.md). The requirements list, year thresholds and the existing SA-06 paragraph are preserved.
+- **History:** [Author decision](decisions.md#sa-08--depth-and-breadth-behind-experience--2026-10-26) and [discussion and approval](conversations/2026-10-26-sa-08-depth-and-breadth.md).
 
 ## SA-09 — Retain the defined-period external-SA model
 

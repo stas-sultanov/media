@@ -11,6 +11,7 @@ Read [decisions](decisions.md) and [improvements](improvements.md) before changi
 - [SA-05 promotion and competence decision](conversations/2026-10-26-sa-05-promotion-and-competence.md): the author's correction beyond “other systems”, agreed concise sentence, placement and approvals on 2026-10-26.
 - [SA-06 mentoring and experience decision](conversations/2026-10-26-sa-06-mentoring-and-experience.md): shortened mentor sentence, removal of repeated promotion wording, continuous experience enumeration and author approval on 2026-10-26.
 - [SA-07 consulting caveat decision](conversations/2026-10-26-sa-07-consulting-exception-skipped.md): proposed exception, reconsideration and author decision to skip it on 2026-10-26.
+- [SA-08 experience requirements decision](conversations/2026-10-26-sa-08-depth-and-breadth.md): agreed explanation of depth, production responsibility and breadth behind the existing year requirements; author approval on 2026-10-26.
 - [Publication comparison](../materials/devto-comparison-2026-10-25.md): comparison against retrieved DEV rendered text.
 - The backlog preserves SA-01 through SA-18; proposals are not blanket-approved.
 

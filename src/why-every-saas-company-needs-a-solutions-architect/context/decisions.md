@@ -110,3 +110,15 @@ The author asked whether to apply revisions together or as separate commits, acc
 - **Why omitted:** The existing “rarely” and “usually” wording already permits exceptions. Explaining how consulting companies develop architects would distract from the article's SaaS focus.
 - **Provenance:** After hearing the proposed caveat in context, the author asked “А вообще нам это надо” and accepted the recommendation to omit it with “Отлично, пропускаем и идем дальше”. See [discussion and final decision](conversations/2026-10-26-sa-07-consulting-exception-skipped.md).
 - **Scope:** This closes SA-07 as skipped and supersedes the earlier invitation to explore the addition. It does not approve or apply any other item.
+
+## SA-08 — Depth and breadth behind experience — 2026-10-26
+
+- **Status:** Approved by the author and implemented in [article.md](../article.md).
+- **What changed:** Added the agreed sentence as a separate paragraph in “Who can play this role?”, immediately before “A strong SA typically has:”.
+- **Why:** Explain that the stated years must reflect deep practical expertise, responsibility for production outcomes and experience across different business and technical conditions.
+- **Seniority preserved:** Existing Software and Infrastructure year thresholds and the rest of the requirements list are retained. The SA-06 paragraph about varied experience inside the internal-development subsection is not changed.
+- **Provenance:** The author asked for the before-and-after wording and the concrete addition, then approved the exact sentence and placement with “Да. Берем”. See [discussion and approval](conversations/2026-10-26-sa-08-depth-and-breadth.md).
+- **Scope:** Only SA-08 is implemented by this article edit. SA-07 remains skipped; all other statuses are preserved.
+- **Agreed addition:**
+
+> The years of experience described below must reflect deep hands-on expertise, responsibility for production outcomes, and exposure to different business and technical conditions.
